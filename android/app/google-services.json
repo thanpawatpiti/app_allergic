@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1046023158019",
+    "project_id": "allergic-4906a",
+    "storage_bucket": "allergic-4906a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046023158019:android:0f3cdcadf76a14e28dd136",
+        "android_client_info": {
+          "package_name": "com.imatthio.allergic_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046023158019-niqjtfps4fqqn8hokcm6j5vl0b69qnor.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4QaWmJh6gMUpQ03XkLmeWU2pFsJsoQuU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046023158019-niqjtfps4fqqn8hokcm6j5vl0b69qnor.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1046023158019-m6qctr4alt1dvr63oc3t07o58olpila4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.imatthio.allergicApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
