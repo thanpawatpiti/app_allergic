@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:sizer/sizer.dart';
 
 class ChooseLanguate extends StatefulWidget {
   const ChooseLanguate({super.key});
@@ -57,16 +58,16 @@ class _ChooseLanguateState extends State<ChooseLanguate> {
                     );
                   }
                 },
-                child: const CircleAvatar(
+                child: CircleAvatar(
                   backgroundColor: Colors.white,
-                  radius: 80,
+                  radius: 10.h,
                   backgroundImage:
                       AssetImage('assets/images/united-states.png'),
                 ),
               ),
-              const Text('English'),
-              const SizedBox(
-                height: 40,
+              Text('English', style: TextStyle(fontSize: 10.sp)),
+              SizedBox(
+                height: 20.h,
               ),
               GestureDetector(
                 onTap: () async {
@@ -83,13 +84,13 @@ class _ChooseLanguateState extends State<ChooseLanguate> {
                     );
                   }
                 },
-                child: const CircleAvatar(
+                child: CircleAvatar(
                   backgroundColor: Colors.white,
-                  radius: 80,
+                  radius: 10.h,
                   backgroundImage: AssetImage('assets/images/thailand.png'),
                 ),
               ),
-              const Text('ภาษาไทย'),
+              Text('ภาษาไทย', style: TextStyle(fontSize: 10.sp)),
             ],
           ),
         ),

@@ -406,25 +406,26 @@ class _LoginScreenState extends State<LoginScreen> {
                 Text(
                   Languages.of(context)!.signIn,
                   style: TextStyle(
-                    fontSize: 13.sp,
+                    fontSize: 10.sp,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 SizedBox(height: 5.h),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25),
+                  padding: EdgeInsets.symmetric(horizontal: 8.h),
                   child: Container(
                     decoration: BoxDecoration(
                       color: Colors.grey[200],
-                      borderRadius: BorderRadius.circular(12),
+                      borderRadius: BorderRadius.circular(5.h),
                       border: Border.all(color: Colors.white),
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.only(left: 20, right: 20),
+                      padding: EdgeInsets.only(left: 2.h, right: 5.h),
                       child: TextFormField(
                         controller: _usernameController,
                         showCursor: true,
                         decoration: InputDecoration(
+                          contentPadding: EdgeInsets.symmetric(vertical: 3.w, horizontal: 1.h),
                           icon: const Icon(Icons.person),
                           hintText: Languages.of(context)!.username,
                           border: InputBorder.none,
@@ -438,20 +439,21 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 SizedBox(height: 2.h),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25),
+                  padding: EdgeInsets.symmetric(horizontal: 8.h),
                   child: Container(
                     decoration: BoxDecoration(
                       color: Colors.grey[200],
-                      borderRadius: BorderRadius.circular(12),
+                      borderRadius: BorderRadius.circular(5.h),
                       border: Border.all(color: Colors.white),
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.only(left: 20, right: 20),
+                      padding: EdgeInsets.only(left: 2.h, right: 5.h),
                       child: TextFormField(
                         controller: _passwordController,
                         showCursor: true,
                         obscureText: true,
                         decoration: InputDecoration(
+                          contentPadding: EdgeInsets.symmetric(vertical: 3.w, horizontal: 1.h),
                           icon: const Icon(Icons.lock),
                           hintText: Languages.of(context)!.password,
                           border: InputBorder.none,
@@ -463,14 +465,14 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                 ),
-                const SizedBox(height: 10),
+                SizedBox(height: 5.h),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25),
+                  padding: EdgeInsets.symmetric(horizontal: 8.h),
                   child: Container(
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: Colors.blue,
-                      borderRadius: BorderRadius.circular(12),
+                      borderRadius: BorderRadius.circular(8.h),
                       border: Border.all(color: Colors.white),
                     ),
                     child: TextButton(
@@ -481,15 +483,15 @@ class _LoginScreenState extends State<LoginScreen> {
                       },
                       child: Text(
                         Languages.of(context)!.signIn,
-                        style: const TextStyle(
+                        style: TextStyle(
                           color: Colors.white,
-                          fontSize: 20,
+                          fontSize: 6.sp,
                         ),
                       ),
                     ),
                   ),
                 ),
-                const SizedBox(height: 10),
+                SizedBox(height: 2.h),
                 TextButton(
                   onPressed: () => Navigator.push(
                     context,
@@ -507,13 +509,13 @@ class _LoginScreenState extends State<LoginScreen> {
                   }),
                   child: Text(
                     Languages.of(context)!.createAccount,
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: Colors.blue,
-                      fontSize: 20,
+                      fontSize: 4.sp,
                     ),
                   ),
                 ),
-                const SizedBox(height: 60),
+                SizedBox(height: 3.h),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -524,36 +526,36 @@ class _LoginScreenState extends State<LoginScreen> {
                             },
                             child: Image.asset(
                               'assets/images/apple.png',
-                              width: 40,
-                              height: 40,
+                              width: 5.w,
+                              height: 5.h,
                             ),
                           )
                         : Container(),
-                    const SizedBox(width: 30),
+                    SizedBox(width: 3.w),
                     GestureDetector(
                       onTap: () async {
                         _loginWithGoogle(context);
                       },
                       child: Image.asset(
                         'assets/images/google.png',
-                        width: 40,
-                        height: 40,
+                        width: 5.w,
+                        height: 5.h,
                       ),
                     ),
-                    const SizedBox(width: 30),
+                    SizedBox(width: 3.w),
                     GestureDetector(
                       onTap: () async {
                         _loginWithFacebook(context);
                       },
                       child: Image.asset(
                         'assets/images/facebook.png',
-                        width: 40,
-                        height: 40,
+                        width: 5.w,
+                        height: 5.h,
                       ),
                     ),
                   ],
                 ),
-                const SizedBox(height: 30),
+                SizedBox(height: 2.h),
               ],
             ),
           ),

@@ -4,114 +4,95 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1371a946-9663-43bc-8f2a-6893bc3497c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Screenshot_20230226_093941.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Screenshot_20230226_094002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Screenshot_20230226_094018.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Screenshot_20230226_094129.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Screenshot_20230226_094153.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Screenshot_20230226_094237.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/release/app-release.aab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.dart_tool/flutter_build/dart_plugin_registrant.dart" beforeDir="false" />
+    <list default="true" id="2d6c8932-e580-421b-855a-c56ed64515da" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/-1033568196/android.image_picker_android.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/-1235470112/android.flutter_secure_storage.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/-1825565384/android.dynamic_color.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/-2043442326/android.firebase_core.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/-783388375/android.url_launcher_android.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/1156623093/android.cloud_firestore.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/1236501624/android.firebase_auth.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/1375462205/android.flutter_local_notifications.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/1494910370/android.sign_in_with_apple.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/1598253666/android.shared_preferences_android.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/1612166685/android.firebase_storage.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/1881503011/android.flutter_timezone.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/1975830396/android.flutter_plugin_android_lifecycle.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/779723633/android.firebase_messaging.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/785021622/android.flutter_facebook_auth.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/841065408/android.google_sign_in_android.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/app/android.app.androidTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/flutter_build/75646e2f89ad998a4e329f96da46255a/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/flutter_build/75646e2f89ad998a4e329f96da46255a/.filecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/flutter_build/75646e2f89ad998a4e329f96da46255a/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/flutter_build/75646e2f89ad998a4e329f96da46255a/app.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/flutter_build/75646e2f89ad998a4e329f96da46255a/debug_android_application.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/flutter_build/75646e2f89ad998a4e329f96da46255a/debug_android_application.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/flutter_build/75646e2f89ad998a4e329f96da46255a/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/flutter_build/75646e2f89ad998a4e329f96da46255a/flutter_assets.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/flutter_build/75646e2f89ad998a4e329f96da46255a/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/flutter_build/75646e2f89ad998a4e329f96da46255a/kernel_snapshot.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/flutter_build/75646e2f89ad998a4e329f96da46255a/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/flutter_build/75646e2f89ad998a4e329f96da46255a/kernel_snapshot.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/flutter_build/d905329ae360045a4903d61f1f815651/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/flutter_build/d905329ae360045a4903d61f1f815651/.filecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/flutter_build/d905329ae360045a4903d61f1f815651/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/flutter_build/d905329ae360045a4903d61f1f815651/app.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/flutter_build/d905329ae360045a4903d61f1f815651/debug_ios_bundle_flutter_assets.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/flutter_build/d905329ae360045a4903d61f1f815651/debug_ios_bundle_flutter_assets.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/flutter_build/d905329ae360045a4903d61f1f815651/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/flutter_build/d905329ae360045a4903d61f1f815651/flutter_assets.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/package_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/AppAuth.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/FBAEMKit.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/FBSDKCoreKit.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/FBSDKCoreKit_Basics.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/FBSDKLoginKit.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/Firebase.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/FirebaseAppCheckInterop.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/FirebaseAuth.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/FirebaseAuthInterop.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/FirebaseCore.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/FirebaseCoreExtension.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/FirebaseCoreInternal.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/FirebaseFirestore.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/FirebaseInstallations.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/FirebaseMessaging.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/FirebaseStorage.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/Flutter.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/GTMAppAuth.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/GTMSessionFetcher.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/GoogleDataTransport.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/GoogleSignIn-GoogleSignIn.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/GoogleSignIn.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/GoogleUtilities.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/Pods-Runner.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/PromisesObjC.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/cloud_firestore.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/firebase_auth.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/firebase_core.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/firebase_messaging.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/firebase_storage.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/flutter_facebook_auth.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/flutter_secure_storage.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/google_sign_in_ios.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/image_picker_ios.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/nanopb.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/shared_preferences_foundation.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/sign_in_with_apple.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/ios/Pods.build/Release-iphonesimulator/url_launcher_ios.build/dgph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build/last_build_run.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/Flutter/Flutter 4.podspec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/Podfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/Runner/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Runner/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/localization/language/language_en.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/localization/language/language_en.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/localization/language/language_th.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/localization/language/language_th.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/localization/language/languages.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/localization/language/languages.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/prints/questions_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/prints/questions_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/screens/profile_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screens/profile_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lib/screens/questions_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screens/questions_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/screens/selected_user.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/screens/selected_user.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/views/choose_languate.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/views/choose_languate.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/views/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/views/login_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lib/views/onboarding_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/views/onboarding_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../windows/runner/.runner.exe.manifest.icloud" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/thadpakornphetwisut/.android/avd/Pixel_4_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/thanpawatpitichoksunthorn/.android/avd/Pixel_4_API_30.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="EXPORT_PRIVATE_KEY" value="false" />
+    <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/../keystore_google" />
+    <option name="KEY_ALIAS" value="upload" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2MqkWNDfrox7L68ffv3P3RMHft9" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2R2qYEmDyBfPpdaA4133yppIZrB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;BundleExportedModule&quot;: &quot;android.app&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;memory.settings.postsync.last.time.stamp&quot;: &quot;1678502567888&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "BundleExportedModule": "android.app",
+    "ExportBundle.BundlePathForandroid.app": "/Users/thanpawatpitichoksunthorn/Documents/APP/allergic_app/android/app",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "memory.settings.postsync.last.time.stamp": "1686458841194",
+    "show.migrate.to.gradle.popup": "false"
+  },
+  "keyToStringList": {
+    "ExportApk.BuildVariants": [
+      "release"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="android.app.main" />
@@ -175,12 +156,23 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1371a946-9663-43bc-8f2a-6893bc3497c5" name="Changes" comment="" />
-      <created>1678502530727</created>
+      <changelist id="2d6c8932-e580-421b-855a-c56ed64515da" name="Changes" comment="" />
+      <created>1686458568579</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1678502530727</updated>
+      <updated>1686458568579</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

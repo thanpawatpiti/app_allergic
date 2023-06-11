@@ -27,6 +27,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
     super.dispose();
   }
 
+
+
   @override
   Widget build(BuildContext context) {
     final List dataOnboard = [
@@ -51,7 +53,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.fromLTRB(2.h, 0.9.h, 2.h, 0.8.h),
+          padding: EdgeInsets.fromLTRB(4.h, 0.9.h, 4.h, 0.8.h),
           child: Column(
             children: [
               Expanded(
@@ -77,8 +79,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   ...List.generate(
                     dataOnboard.length,
                     (index) => Padding(
-                      padding: const EdgeInsets.only(
-                        right: 4.0,
+                      padding: EdgeInsets.only(
+                        right: 2.h,
                       ),
                       child: DotIndicator(
                         isActive: index == _pageIndex,
@@ -88,8 +90,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   const Spacer(),
                   _pageIndex == 2
                       ? SizedBox(
-                          height: 14.h,
-                          width: 14.w,
+                          height: 12.h,
+                          width: 12.w,
                           child: ElevatedButton(
                             onPressed: () {
                               Navigator.pushAndRemoveUntil(
@@ -111,8 +113,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                           ),
                         )
                       : SizedBox(
-                          height: 14.h,
-                          width: 14.w,
+                          height: 12.h,
+                          width: 12.w,
                           child: ElevatedButton(
                             onPressed: () {
                               _pageController.nextPage(
@@ -152,7 +154,7 @@ class DotIndicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 4,
+      width: 2.w,
       height: isActive ? 3.h : 1.h,
       decoration: BoxDecoration(
         color: isActive ? Colors.blue : Colors.grey,
@@ -185,7 +187,7 @@ class OnboardContent extends StatelessWidget {
           title,
           textAlign: TextAlign.center,
           style: TextStyle(
-            fontSize: 16.sp,
+            fontSize: 15.sp,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -194,7 +196,7 @@ class OnboardContent extends StatelessWidget {
           description,
           textAlign: TextAlign.start,
           style: TextStyle(
-            fontSize: 12.sp,
+            fontSize: 9.sp,
           )
         ),
         const Spacer(),

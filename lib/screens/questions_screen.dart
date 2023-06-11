@@ -426,13 +426,15 @@ class _QuestionScreenState extends State<QuestionScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(left: 20, top: 10),
                       child: Text(
                         Languages.of(context)!.questionStart,
-                        style: const TextStyle(
-                          fontSize: 30,
+                        style: TextStyle(
+                          fontSize: 10.sp,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -447,8 +449,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Text(
                     Languages.of(context)!.question1,
-                    style: const TextStyle(
-                      fontSize: 16,
+                    style: TextStyle(
+                      fontSize: 7.sp,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -495,8 +497,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Text(
                     Languages.of(context)!.question2,
-                    style: const TextStyle(
-                      fontSize: 16,
+                    style: TextStyle(
+                      fontSize: 7.sp,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -518,8 +520,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       ),
                       Text(
                         Languages.of(context)!.genderMale,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 7.sp,
                         ),
                       ),
                       const Spacer(),
@@ -534,8 +536,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       ),
                       Text(
                         Languages.of(context)!.genderFemale,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 7.sp,
                         ),
                       ),
                     ],
@@ -548,8 +550,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Text(
                     Languages.of(context)!.question3,
-                    style: const TextStyle(
-                      fontSize: 16,
+                    style: TextStyle(
+                      fontSize: 7.sp,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -563,8 +565,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         children: [
                           Text(
                             Languages.of(context)!.question3_1,
-                            style: const TextStyle(
-                              fontSize: 15,
+                            style: TextStyle(
+                              fontSize: 7.sp,
                             ),
                           ),
                           Row(
@@ -581,8 +583,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerYes,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                               const SizedBox(
@@ -613,8 +615,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       Column(
                         children: [
                           Text(Languages.of(context)!.question3_2,
-                              style: const TextStyle(
-                                fontSize: 15,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               )),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -630,8 +632,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerYes,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                               const SizedBox(
@@ -648,8 +650,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerNo,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                             ],
@@ -663,8 +665,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           Text(Languages.of(context)!.question3_3,
-                              style: const TextStyle(
-                                fontSize: 15,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               )),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -680,8 +682,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerYes,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                               const SizedBox(
@@ -698,8 +700,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerNo,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                             ],
@@ -712,8 +714,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       Column(
                         children: [
                           Text(Languages.of(context)!.question3_4,
-                              style: const TextStyle(
-                                fontSize: 15,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               )),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -729,9 +731,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerYes,
-                                style: const TextStyle(
-                                  fontSize: 16,
-                                ),
+                                  style: TextStyle(
+                                    fontSize: 7.sp,
+                                  ),
                               ),
                               const SizedBox(
                                 width: 20,
@@ -747,9 +749,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerNo,
-                                style: const TextStyle(
-                                  fontSize: 16,
-                                ),
+                                  style: TextStyle(
+                                    fontSize: 7.sp,
+                                  ),
                               ),
                             ],
                           ),
@@ -761,8 +763,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       Column(
                         children: [
                           Text(Languages.of(context)!.question3_5,
-                              style: const TextStyle(
-                                fontSize: 15,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               )),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -778,8 +780,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerYes,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                               const SizedBox(
@@ -796,8 +798,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerNo,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                             ],
@@ -810,8 +812,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       Column(
                         children: [
                           Text(Languages.of(context)!.question3_6,
-                              style: const TextStyle(
-                                fontSize: 15,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               )),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -827,8 +829,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerYes,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                               const SizedBox(
@@ -845,8 +847,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerNo,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                             ],
@@ -859,8 +861,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       Column(
                         children: [
                           Text(Languages.of(context)!.question3_7,
-                              style: const TextStyle(
-                                fontSize: 15,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               )),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -876,8 +878,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerYes,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                               const SizedBox(
@@ -894,8 +896,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerNo,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                             ],
@@ -908,8 +910,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       Column(
                         children: [
                           Text(Languages.of(context)!.question3_8,
-                              style: const TextStyle(
-                                fontSize: 15,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               )),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -925,8 +927,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerYes,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                               const SizedBox(
@@ -943,8 +945,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerNo,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                             ],
@@ -957,8 +959,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       Column(
                         children: [
                           Text(Languages.of(context)!.question3_9,
-                              style: const TextStyle(
-                                fontSize: 15,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               )),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -974,8 +976,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerYes,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                               const SizedBox(
@@ -992,8 +994,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerNo,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                             ],
@@ -1006,8 +1008,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       Column(
                         children: [
                           Text(Languages.of(context)!.question3_10,
-                              style: const TextStyle(
-                                fontSize: 15,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               )),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -1023,8 +1025,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerYes,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                               const SizedBox(
@@ -1041,8 +1043,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerNo,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                             ],
@@ -1055,8 +1057,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       Column(
                         children: [
                           Text(Languages.of(context)!.question3_11,
-                              style: const TextStyle(
-                                fontSize: 15,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               )),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -1072,8 +1074,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerYes,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                               const SizedBox(
@@ -1090,8 +1092,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerNo,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                             ],
@@ -1104,8 +1106,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       Column(
                         children: [
                           Text(Languages.of(context)!.question3_12,
-                              style: const TextStyle(
-                                fontSize: 15,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               )),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -1121,8 +1123,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerYes,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                               const SizedBox(
@@ -1139,8 +1141,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerNo,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                             ],
@@ -1153,8 +1155,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       Column(
                         children: [
                           Text(Languages.of(context)!.question3_13,
-                              style: const TextStyle(
-                                fontSize: 15,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               )),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -1170,8 +1172,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerYes,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                               const SizedBox(
@@ -1188,8 +1190,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerNo,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                             ],
@@ -1202,8 +1204,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       Column(
                         children: [
                           Text(Languages.of(context)!.question3_14,
-                              style: const TextStyle(
-                                fontSize: 15,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               )),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -1219,8 +1221,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerYes,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                               const SizedBox(
@@ -1237,8 +1239,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerNo,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                             ],
@@ -1251,8 +1253,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       Column(
                         children: [
                           Text(Languages.of(context)!.question3_15,
-                              style: const TextStyle(
-                                fontSize: 15,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               )),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -1268,8 +1270,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerYes,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                               const SizedBox(
@@ -1286,8 +1288,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerNo,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                             ],
@@ -1300,8 +1302,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       Column(
                         children: [
                           Text(Languages.of(context)!.question3_16,
-                              style: const TextStyle(
-                                fontSize: 15,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               )),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -1317,8 +1319,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerYes,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                               const SizedBox(
@@ -1335,8 +1337,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerNo,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                             ],
@@ -1353,8 +1355,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Text(
                     Languages.of(context)!.question4,
-                    style: const TextStyle(
-                      fontSize: 16,
+                    style: TextStyle(
+                      fontSize: 7.sp,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -1377,8 +1379,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                           ),
                           Text(
                             Languages.of(context)!.everyDay,
-                            style: const TextStyle(
-                              fontSize: 16,
+                            style: TextStyle(
+                              fontSize: 7.sp,
                             ),
                           ),
                         ],
@@ -1396,8 +1398,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                           ),
                           Text(
                             Languages.of(context)!.everyWeek,
-                            style: const TextStyle(
-                              fontSize: 16,
+                            style: TextStyle(
+                              fontSize: 7.sp,
                             ),
                           ),
                         ],
@@ -1415,8 +1417,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                           ),
                           Text(
                             Languages.of(context)!.someTime,
-                            style: const TextStyle(
-                              fontSize: 16,
+                            style: TextStyle(
+                              fontSize: 7.sp,
                             ),
                           ),
                         ],
@@ -1431,8 +1433,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Text(
                     Languages.of(context)!.question5,
-                    style: const TextStyle(
-                      fontSize: 16,
+                    style: TextStyle(
+                      fontSize: 7.sp,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -1446,8 +1448,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         children: [
                           Text(
                             Languages.of(context)!.question5_1,
-                            style: const TextStyle(
-                              fontSize: 16,
+                            style: TextStyle(
+                              fontSize: 7.sp,
                             ),
                           ),
                           Row(
@@ -1464,8 +1466,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerYes,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                               const SizedBox(
@@ -1482,8 +1484,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerNo,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                             ],
@@ -1497,8 +1499,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         children: [
                           Text(
                             Languages.of(context)!.question5_2,
-                            style: const TextStyle(
-                              fontSize: 16,
+                            style: TextStyle(
+                              fontSize: 7.sp,
                             ),
                           ),
                           Row(
@@ -1515,8 +1517,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerYes,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                               const SizedBox(
@@ -1533,8 +1535,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerNo,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                             ],
@@ -1548,8 +1550,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         children: [
                           Text(
                             Languages.of(context)!.question5_3,
-                            style: const TextStyle(
-                              fontSize: 16,
+                            style: TextStyle(
+                              fontSize: 7.sp,
                             ),
                           ),
                           Row(
@@ -1566,8 +1568,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerYes,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                               const SizedBox(
@@ -1584,8 +1586,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerNo,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                             ],
@@ -1599,8 +1601,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         children: [
                           Text(
                             Languages.of(context)!.question5_4,
-                            style: const TextStyle(
-                              fontSize: 16,
+                            style: TextStyle(
+                              fontSize: 7.sp,
                             ),
                           ),
                           Row(
@@ -1617,8 +1619,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerYes,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                               const SizedBox(
@@ -1635,8 +1637,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerNo,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 7.sp,
                                 ),
                               ),
                             ],
@@ -1653,8 +1655,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Text(
                     Languages.of(context)!.question6,
-                    style: const TextStyle(
-                      fontSize: 16,
+                    style: TextStyle(
+                      fontSize: 7.sp,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -1676,8 +1678,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       ),
                       Text(
                         Languages.of(context)!.answerYes,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 7.sp,
                         ),
                       ),
                       const Spacer(),
@@ -1692,8 +1694,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       ),
                       Text(
                         Languages.of(context)!.answerNo,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 7.sp,
                         ),
                       ),
                     ],
@@ -1709,8 +1711,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Text(
                           Languages.of(context)!.question6_1,
-                          style: const TextStyle(
-                            fontSize: 16,
+                          style: TextStyle(
+                            fontSize: 7.sp,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -1734,8 +1736,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                             ),
                             Text(
                               Languages.of(context)!.answerYes,
-                              style: const TextStyle(
-                                fontSize: 16,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               ),
                             ),
                             const Spacer(),
@@ -1750,8 +1752,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                             ),
                             Text(
                               Languages.of(context)!.answerNo,
-                              style: const TextStyle(
-                                fontSize: 16,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               ),
                             ),
                           ],
@@ -1765,8 +1767,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Text(
                     Languages.of(context)!.question7,
-                    style: const TextStyle(
-                      fontSize: 16,
+                    style: TextStyle(
+                      fontSize: 7.sp,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -1788,8 +1790,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       ),
                       Text(
                         Languages.of(context)!.answerYes,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 7.sp,
                         ),
                       ),
                       const Spacer(),
@@ -1804,8 +1806,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       ),
                       Text(
                         Languages.of(context)!.answerNo,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 7.sp,
                         ),
                       ),
                     ],
@@ -1821,8 +1823,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Text(
                           Languages.of(context)!.question7_1,
-                          style: const TextStyle(
-                            fontSize: 16,
+                          style: TextStyle(
+                            fontSize: 7.sp,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -1838,8 +1840,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               children: [
                                 Text(
                                   Languages.of(context)!.petDogs,
-                                  style: const TextStyle(
-                                    fontSize: 16,
+                                  style: TextStyle(
+                                    fontSize: 7.sp,
                                   ),
                                 ),
                                 const Spacer(),
@@ -1858,8 +1860,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               children: [
                                 Text(
                                   Languages.of(context)!.petCats,
-                                  style: const TextStyle(
-                                    fontSize: 16,
+                                  style: TextStyle(
+                                    fontSize: 7.sp,
                                   ),
                                 ),
                                 const Spacer(),
@@ -1878,8 +1880,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               children: [
                                 Text(
                                   Languages.of(context)!.petOther,
-                                  style: const TextStyle(
-                                    fontSize: 16,
+                                  style: TextStyle(
+                                    fontSize: 7.sp,
                                   ),
                                 ),
                                 const Spacer(),
@@ -1909,8 +1911,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Text(
                           Languages.of(context)!.question7_1_1,
-                          style: const TextStyle(
-                            fontSize: 16,
+                          style: TextStyle(
+                            fontSize: 7.sp,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -1938,8 +1940,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Text(
                           Languages.of(context)!.question7_2,
-                          style: const TextStyle(
-                            fontSize: 16,
+                          style: TextStyle(
+                            fontSize: 7.sp,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -1963,8 +1965,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                             ),
                             Text(
                               Languages.of(context)!.answerYes,
-                              style: const TextStyle(
-                                fontSize: 16,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               ),
                             ),
                             const Spacer(),
@@ -1979,8 +1981,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                             ),
                             Text(
                               Languages.of(context)!.answerNo,
-                              style: const TextStyle(
-                                fontSize: 16,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               ),
                             ),
                           ],
@@ -1994,8 +1996,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Text(
                     Languages.of(context)!.question8,
-                    style: const TextStyle(
-                      fontSize: 16,
+                    style: TextStyle(
+                      fontSize: 7.sp,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -2017,8 +2019,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       ),
                       Text(
                         Languages.of(context)!.answerYes,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 7.sp,
                         ),
                       ),
                       const Spacer(),
@@ -2033,8 +2035,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       ),
                       Text(
                         Languages.of(context)!.answerNo,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 7.sp,
                         ),
                       ),
                     ],
@@ -2050,8 +2052,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Text(
                           Languages.of(context)!.question8_1,
-                          style: const TextStyle(
-                            fontSize: 16,
+                          style: TextStyle(
+                            fontSize: 7.sp,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -2082,8 +2084,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Text(
                           Languages.of(context)!.question8_2,
-                          style: const TextStyle(
-                            fontSize: 16,
+                          style: TextStyle(
+                            fontSize: 7.sp,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -2107,8 +2109,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                             ),
                             Text(
                               Languages.of(context)!.answerYes,
-                              style: const TextStyle(
-                                fontSize: 16,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               ),
                             ),
                             const Spacer(),
@@ -2123,8 +2125,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                             ),
                             Text(
                               Languages.of(context)!.answerNo,
-                              style: const TextStyle(
-                                fontSize: 16,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               ),
                             ),
                           ],
@@ -2141,8 +2143,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Text(
                           Languages.of(context)!.question8_3,
-                          style: const TextStyle(
-                            fontSize: 16,
+                          style: TextStyle(
+                            fontSize: 7.sp,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -2170,8 +2172,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Text(
                     Languages.of(context)!.question9,
-                    style: const TextStyle(
-                      fontSize: 16,
+                    style: TextStyle(
+                      fontSize: 7.sp,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -2193,8 +2195,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       ),
                       Text(
                         Languages.of(context)!.answerYes,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 7.sp,
                         ),
                       ),
                       const Spacer(),
@@ -2209,8 +2211,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       ),
                       Text(
                         Languages.of(context)!.answerNo,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 7.sp,
                         ),
                       ),
                     ],
@@ -2226,8 +2228,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Text(
                           Languages.of(context)!.question9_1,
-                          style: const TextStyle(
-                            fontSize: 16,
+                          style: TextStyle(
+                            fontSize: 7.sp,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -2255,8 +2257,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Text(
                     Languages.of(context)!.question10,
-                    style: const TextStyle(
-                      fontSize: 16,
+                    style: TextStyle(
+                      fontSize: 7.sp,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -2278,8 +2280,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       ),
                       Text(
                         Languages.of(context)!.answerYes,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 7.sp,
                         ),
                       ),
                       const Spacer(),
@@ -2294,8 +2296,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       ),
                       Text(
                         Languages.of(context)!.answerNo,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 7.sp,
                         ),
                       ),
                     ],
@@ -2340,8 +2342,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Text(
                     Languages.of(context)!.question11,
-                    style: const TextStyle(
-                      fontSize: 16,
+                    style: TextStyle(
+                      fontSize: 7.sp,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -2363,8 +2365,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       ),
                       Text(
                         Languages.of(context)!.answerYes,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 7.sp,
                         ),
                       ),
                       const Spacer(),
@@ -2379,8 +2381,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                       ),
                       Text(
                         Languages.of(context)!.answerNo,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 7.sp,
                         ),
                       ),
                     ],
@@ -2396,8 +2398,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Text(
                           Languages.of(context)!.question11_1,
-                          style: const TextStyle(
-                            fontSize: 16,
+                          style: TextStyle(
+                            fontSize: 7.sp,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -2421,8 +2423,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                             ),
                             Text(
                               Languages.of(context)!.bySkin,
-                              style: const TextStyle(
-                                fontSize: 16,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               ),
                             ),
                             const Spacer(),
@@ -2437,8 +2439,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                             ),
                             Text(
                               Languages.of(context)!.byBlood,
-                              style: const TextStyle(
-                                fontSize: 16,
+                              style: TextStyle(
+                                fontSize: 7.sp,
                               ),
                             ),
                           ],
@@ -2470,13 +2472,13 @@ class _QuestionScreenState extends State<QuestionScreen> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: SizedBox(
-        width: MediaQuery.of(context).size.width / 1.5,
-        height: 50,
+        width: 30.w,
+        height: 4.h,
         child: ElevatedButton(
           onPressed: () {
             _conditionBeforeSave();
           },
-          child: Text(Languages.of(context)!.send),
+          child: Text(Languages.of(context)!.send, style: TextStyle(fontSize: 6.sp),),
         ),
       ),
     );
