@@ -61,6 +61,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
       if (result.docs.isNotEmpty) {
         await showAlertDialog(context);
       } else {
+        if (genderSelected == 'ผู้ชาย') {
+          genderSelected = 'Male';
+        }
+        if (genderSelected == 'ผู้หญิง') {
+          genderSelected = 'Female';
+        }
         EasyLoading.show(status: Languages.of(context)!.loading);
         FirebaseFirestore.instance.collection('users').add({
           'username': _usernameController.text,

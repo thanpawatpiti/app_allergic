@@ -90,8 +90,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   const Spacer(),
                   _pageIndex == 2
                       ? SizedBox(
-                          height: 12.h,
-                          width: 12.w,
+                          height: 13.h,
+                          width: 13.w,
                           child: ElevatedButton(
                             onPressed: () {
                               Navigator.pushAndRemoveUntil(
@@ -107,14 +107,14 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                             ),
                             child: const Icon(
                               Icons.arrow_forward,
-                              size: 30,
+                              size: 28,
                               color: Colors.white,
                             ),
                           ),
                         )
                       : SizedBox(
-                          height: 12.h,
-                          width: 12.w,
+                          height: 13.h,
+                          width: 13.w,
                           child: ElevatedButton(
                             onPressed: () {
                               _pageController.nextPage(
@@ -127,7 +127,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                             ),
                             child: const Icon(
                               Icons.arrow_forward,
-                              size: 30,
+                              size: 28,
                               color: Colors.white,
                             ),
                           ),
@@ -196,7 +196,7 @@ class OnboardContent extends StatelessWidget {
           description,
           textAlign: TextAlign.start,
           style: TextStyle(
-            fontSize: 9.sp,
+            fontSize: 11.sp,
           )
         ),
         const Spacer(),

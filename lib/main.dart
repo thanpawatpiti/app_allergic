@@ -25,6 +25,7 @@ import 'localization/localizations_delegate.dart';
 import 'package:timezone/data/latest_all.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 import 'package:sizer/sizer.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
@@ -69,7 +70,8 @@ void notificationTapBackground(NotificationResponse notificationResponse) {
 }
 
 void main(context) async {
-  WidgetsFlutterBinding.ensureInitialized();
+  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   await Firebase.initializeApp();
   await _configureLocalTimeZone(context);
   final NotificationAppLaunchDetails? notificationAppLaunchDetails =
@@ -272,6 +274,7 @@ class _MyAppState extends State<MyApp> {
     _requestPermissions();
     _configureDidReceiveLocalNotificationSubject();
     _configureSelectNotificationSubject();
+    FlutterNativeSplash.remove();
   }
 
   @override

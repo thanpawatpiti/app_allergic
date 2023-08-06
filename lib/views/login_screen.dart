@@ -406,13 +406,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 Text(
                   Languages.of(context)!.signIn,
                   style: TextStyle(
-                    fontSize: 10.sp,
+                    fontSize: 15.sp,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 SizedBox(height: 5.h),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 8.h),
+                  padding: EdgeInsets.symmetric(horizontal: 2.h),
                   child: Container(
                     decoration: BoxDecoration(
                       color: Colors.grey[200],
@@ -439,7 +439,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 SizedBox(height: 2.h),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 8.h),
+                  padding: EdgeInsets.symmetric(horizontal: 2.h),
                   child: Container(
                     decoration: BoxDecoration(
                       color: Colors.grey[200],
@@ -485,13 +485,13 @@ class _LoginScreenState extends State<LoginScreen> {
                         Languages.of(context)!.signIn,
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 6.sp,
+                          fontSize: 12.sp,
                         ),
                       ),
                     ),
                   ),
                 ),
-                SizedBox(height: 2.h),
+                SizedBox(height: 1.h),
                 TextButton(
                   onPressed: () => Navigator.push(
                     context,
@@ -511,11 +511,11 @@ class _LoginScreenState extends State<LoginScreen> {
                     Languages.of(context)!.createAccount,
                     style: TextStyle(
                       color: Colors.blue,
-                      fontSize: 4.sp,
+                      fontSize: 11.sp,
                     ),
                   ),
                 ),
-                SizedBox(height: 3.h),
+                SizedBox(height: 1.h),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -526,8 +526,8 @@ class _LoginScreenState extends State<LoginScreen> {
                             },
                             child: Image.asset(
                               'assets/images/apple.png',
-                              width: 5.w,
-                              height: 5.h,
+                              width: 10.w,
+                              height: 10.h,
                             ),
                           )
                         : Container(),
@@ -538,8 +538,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       },
                       child: Image.asset(
                         'assets/images/google.png',
-                        width: 5.w,
-                        height: 5.h,
+                        width: 10.w,
+                        height: 10.h,
                       ),
                     ),
                     SizedBox(width: 3.w),
@@ -549,8 +549,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       },
                       child: Image.asset(
                         'assets/images/facebook.png',
-                        width: 5.w,
-                        height: 5.h,
+                        width: 10.w,
+                        height: 10.h,
                       ),
                     ),
                   ],
