@@ -187,8 +187,8 @@ tz.TZDateTime _nextInstanceOfTenAM() {
 Future<void> _scheduleDailyTenAMNotification(context) async {
   await flutterLocalNotificationsPlugin.zonedSchedule(
       0,
-      'scheduled title',
-      'scheduled body',
+      Languages.of(context)!.notifyTitle,
+      Languages.of(context)!.notifyDescription,
       _nextInstanceOfTenAM(),
       const NotificationDetails(
         android: AndroidNotificationDetails(

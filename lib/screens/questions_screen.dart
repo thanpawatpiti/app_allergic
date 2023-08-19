@@ -169,71 +169,71 @@ class _QuestionScreenState extends State<QuestionScreen> {
   }
 
   Future _insertData() async {
-    if (_question3_1 == null) {
+    if (_question3_1 == null || _question3_2 == null || _question3_3 == null || _question3_4 == null || _question3_5 == null || _question3_6 == null || _question3_7 == null || _question3_8 == null || _question3_9 == null || _question3_10 == null || _question3_11 == null || _question3_12 == null || _question3_13 == null || _question3_14 == null || _question3_15 == null || _question3_16 == null || _question4 == null || _question5_1 == null || _question5_2 == null || _question5_3 == null || _question5_4 == null || _question6 == null || _question7 == null || _question8 == null || _question9 == null || _question10 == null || _question11 == null) {
       EasyLoading.showError(Languages.of(context)!.pleaseAnswerAllQuestions);
       return;
     }
 
     EasyLoading.show(status: Languages.of(context)!.loading);
-    // await FirebaseFirestore.instance.collection('surveys').add({
-    //   'username': username,
-    //   'my_name': name,
-    //   'date': DateFormat('dd-MM-yyyy').format(DateTime.now()),
-    //   'datetime': DateTime.now(),
-    //   'type': 'pre',
-    //   'score': score,
-    //   'question1': _question1.round().toString(),
-    //   'question2': _question2,
-    //   'question3_1': _question3_1,
-    //   'question3_2': _question3_2,
-    //   'question3_3': _question3_3,
-    //   'question3_4': _question3_4,
-    //   'question3_5': _question3_5,
-    //   'question3_6': _question3_6,
-    //   'question3_7': _question3_7,
-    //   'question3_8': _question3_8,
-    //   'question3_9': _question3_9,
-    //   'question3_10': _question3_10,
-    //   'question3_11': _question3_11,
-    //   'question3_12': _question3_12,
-    //   'question3_13': _question3_13,
-    //   'question3_14': _question3_14,
-    //   'question3_15': _question3_15,
-    //   'question3_16': _question3_16,
-    //   'question4': _question4,
-    //   'question5_1': _question5_1,
-    //   'question5_2': _question5_2,
-    //   'question5_3': _question5_3,
-    //   'question5_4': _question5_4,
-    //   'question6': _question6,
-    //   'question6_1': _question6_1,
-    //   'question7': _question7,
-    //   'question7_1': _question7_1.text,
-    //   'question7_1_1': _question7_3_1.text,
-    //   'question7_2': _question7_2.text,
-    //   'question7_3': _question7_3.text,
-    //   'question7_4': _question7_4,
-    //   'question8': _question8,
-    //   'question8_1': _question8_1.text,
-    //   'question8_2': _question8_2,
-    //   'question8_3': _question8_3.text,
-    //   'question9': _question9,
-    //   'question9_1': _question9_1.text,
-    //   'question10': _question10,
-    //   'question10_1': _question10_1.text,
-    //   'question11': _question11,
-    //   'question11_1': _question11_1.text,
-    //   'question11_2': _question11_2,
-    // }).then((value) {
-    //   EasyLoading.showSuccess(Languages.of(context)!.success);
-    //   Navigator.pushAndRemoveUntil(
-    //       context,
-    //       MaterialPageRoute(builder: (context) => const HomeScreen()),
-    //       (route) => false);
-    // }).catchError((error) {
-    //   print(error);
-    //   EasyLoading.showError(Languages.of(context)!.error);
-    // });
+    await FirebaseFirestore.instance.collection('surveys').add({
+      'username': username,
+      'my_name': name,
+      'date': DateFormat('dd-MM-yyyy').format(DateTime.now()),
+      'datetime': DateTime.now(),
+      'type': 'pre',
+      'score': score,
+      'question1': _question1.round().toString(),
+      'question2': _question2,
+      'question3_1': _question3_1,
+      'question3_2': _question3_2,
+      'question3_3': _question3_3,
+      'question3_4': _question3_4,
+      'question3_5': _question3_5,
+      'question3_6': _question3_6,
+      'question3_7': _question3_7,
+      'question3_8': _question3_8,
+      'question3_9': _question3_9,
+      'question3_10': _question3_10,
+      'question3_11': _question3_11,
+      'question3_12': _question3_12,
+      'question3_13': _question3_13,
+      'question3_14': _question3_14,
+      'question3_15': _question3_15,
+      'question3_16': _question3_16,
+      'question4': _question4,
+      'question5_1': _question5_1,
+      'question5_2': _question5_2,
+      'question5_3': _question5_3,
+      'question5_4': _question5_4,
+      'question6': _question6,
+      'question6_1': _question6_1,
+      'question7': _question7,
+      'question7_1': _question7_1.text,
+      'question7_1_1': _question7_3_1.text,
+      'question7_2': _question7_2.text,
+      'question7_3': _question7_3.text,
+      'question7_4': _question7_4,
+      'question8': _question8,
+      'question8_1': _question8_1.text,
+      'question8_2': _question8_2,
+      'question8_3': _question8_3.text,
+      'question9': _question9,
+      'question9_1': _question9_1.text,
+      'question10': _question10,
+      'question10_1': _question10_1.text,
+      'question11': _question11,
+      'question11_1': _question11_1.text,
+      'question11_2': _question11_2,
+    }).then((value) {
+      EasyLoading.showSuccess(Languages.of(context)!.success);
+      Navigator.pushAndRemoveUntil(
+          context,
+          MaterialPageRoute(builder: (context) => const HomeScreen()),
+          (route) => false);
+    }).catchError((error) {
+      print(error);
+      EasyLoading.showError(Languages.of(context)!.error);
+    });
   }
 
   void _countScore() {

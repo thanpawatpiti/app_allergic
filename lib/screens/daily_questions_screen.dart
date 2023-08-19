@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:intl/intl.dart';
+import 'package:sizer/sizer.dart';
 
 class DailyQuestionScreen extends StatefulWidget {
   const DailyQuestionScreen({Key? key}) : super(key: key);
@@ -106,11 +107,11 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
               Row(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(left: 20, top: 10),
+                    padding: EdgeInsets.only(left: 2.h, top: 1.h),
                     child: Text(
                       Languages.of(context)!.questionDaily,
-                      style: const TextStyle(
-                        fontSize: 30,
+                      style: TextStyle(
+                        fontSize: 25.sp,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -131,8 +132,8 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   Languages.of(context)!.noseSickness,
-                  style: const TextStyle(
-                    fontSize: 22,
+                  style: TextStyle(
+                    fontSize: 15.sp,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -149,8 +150,8 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       padding: const EdgeInsets.only(left: 20),
                       child: Text(
                         Languages.of(context)!.dailyQuestion1,
-                        style: const TextStyle(
-                          fontSize: 20,
+                        style: TextStyle(
+                          fontSize: 13.sp,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -159,8 +160,8 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       padding: const EdgeInsets.only(left: 20),
                       child: Text(
                         Languages.of(context)!.dailyQuestion1_1,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 11.sp,
                         ),
                       ),
                     ),
@@ -250,8 +251,8 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       padding: const EdgeInsets.only(left: 20),
                       child: Text(
                         Languages.of(context)!.dailyQuestion2,
-                        style: const TextStyle(
-                          fontSize: 20,
+                        style: TextStyle(
+                          fontSize: 13.sp,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -260,8 +261,8 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       padding: const EdgeInsets.only(left: 20),
                       child: Text(
                         Languages.of(context)!.dailyQuestion2_1,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 11.sp,
                         ),
                       ),
                     ),
@@ -351,8 +352,8 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       padding: const EdgeInsets.only(left: 20),
                       child: Text(
                         Languages.of(context)!.dailyQuestion3,
-                        style: const TextStyle(
-                          fontSize: 20,
+                        style: TextStyle(
+                          fontSize: 13.sp,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -361,8 +362,8 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       padding: const EdgeInsets.only(left: 20),
                       child: Text(
                         Languages.of(context)!.dailyQuestion3_1,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 11.sp,
                         ),
                       ),
                     ),
@@ -452,8 +453,8 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       padding: const EdgeInsets.only(left: 20),
                       child: Text(
                         Languages.of(context)!.dailyQuestion4,
-                        style: const TextStyle(
-                          fontSize: 20,
+                        style: TextStyle(
+                          fontSize: 13.sp,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -462,8 +463,8 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       padding: const EdgeInsets.only(left: 20),
                       child: Text(
                         Languages.of(context)!.dailyQuestion4_1,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 11.sp,
                         ),
                       ),
                     ),
@@ -548,8 +549,8 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   Languages.of(context)!.eyeSickness,
-                  style: const TextStyle(
-                    fontSize: 22,
+                  style: TextStyle(
+                    fontSize: 15.sp,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -566,8 +567,8 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       padding: const EdgeInsets.only(left: 20),
                       child: Text(
                         Languages.of(context)!.dailyQuestion5,
-                        style: const TextStyle(
-                          fontSize: 20,
+                        style: TextStyle(
+                          fontSize: 13.sp,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -576,8 +577,8 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       padding: const EdgeInsets.only(left: 20),
                       child: Text(
                         Languages.of(context)!.dailyQuestion5_1,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 11.sp,
                         ),
                       ),
                     ),
@@ -667,8 +668,8 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       padding: const EdgeInsets.only(left: 20),
                       child: Text(
                         Languages.of(context)!.dailyQuestion6,
-                        style: const TextStyle(
-                          fontSize: 20,
+                        style: TextStyle(
+                          fontSize: 13.sp,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -677,8 +678,8 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       padding: const EdgeInsets.only(left: 20),
                       child: Text(
                         Languages.of(context)!.dailyQuestion6_1,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 11.sp,
                         ),
                       ),
                     ),
@@ -768,8 +769,8 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       padding: const EdgeInsets.only(left: 20),
                       child: Text(
                         Languages.of(context)!.dailyQuestion7,
-                        style: const TextStyle(
-                          fontSize: 20,
+                        style: TextStyle(
+                          fontSize: 13.sp,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -778,8 +779,8 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       padding: const EdgeInsets.only(left: 20),
                       child: Text(
                         Languages.of(context)!.dailyQuestion7_1,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        style: TextStyle(
+                          fontSize: 11.sp,
                         ),
                       ),
                     ),
