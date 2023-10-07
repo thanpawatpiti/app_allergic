@@ -283,4 +283,12 @@ abstract class Languages {
   String get notifyTitle;
 
   String get notifyDescription;
+
+  String get headerSelectScreen;
+
+  String get btnSendDailyquestion;
+
+  String get saveDailyquestion;
+
+  String get totalScore;
 }

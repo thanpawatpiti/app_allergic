@@ -7,7 +7,7 @@ class LanguageTh extends Languages {
 
   @override
   String get onBoardDescription1 =>
-      "เป็น application สำหรับประเมินอาการ ทางด้านโรคภูมิแพ้ จมูกและภูมิแพ้ตา ในเด็ก และผู้ใหญ่ อายุ 12 ปีขึ้นไป โดยจะทำการประเมินอาการในทุกๆด้านของอาการภูมิแพ้ ให้ผู้ป่วยทำการประเมินตัวเองในทุกวัน ทั้งอาการด้านจมูกและตา เป็น เวลา   1-4 สัปดาห์ และส่งมายังแพทย์ผู้ทำการรักษา";
+      "เป็นแอปพลิเคชันสำหรับประเมินอาการทางด้านโรคภูมิแพ้ จมูกและภูมิแพ้ตาในเด็กและผู้ใหญ่อายุ 12 ปีขึ้นไป โดยจะทำการประเมินอาการในทุกๆด้านของอาการภูมิแพ้ให้ผู้ป่วยทำการประเมินตัวเองในทุกวัน ทั้งอาการด้านจมูกและตาเป็นเวลา 1-4 สัปดาห์ และส่งมายังแพทย์ผู้ทำการรักษา";
 
   @override
   String get onBoardTitle2 =>
@@ -386,10 +386,10 @@ class LanguageTh extends Languages {
   String get chooseLanguage => 'ภาษา';
 
   @override
-  String get noseSickness => 'อาการทางจมูก ให้คะแนน 0-5 คะแนน';
+  String get noseSickness => 'อาการทางจมูก ให้คะแนน 0-10 คะแนน';
 
   @override
-  String get eyeSickness => 'อาการทางตา ให้คะแนน 0-5 คะแนน';
+  String get eyeSickness => 'อาการทางตา ให้คะแนน 0-10 คะแนน';
 
   @override
   String get petDogs => 'สนัข';
@@ -423,4 +423,16 @@ class LanguageTh extends Languages {
 
   @override
   String get notifyDescription => 'ถึงเวลาทำแบบสอบถามประจำวันแล้ว';
+
+  @override
+  String get headerSelectScreen => 'กรุณาเลือกรูปแบบแบบสอบถาม';
+
+  @override
+  String get btnSendDailyquestion => 'ส่งแบบสอบถาม';
+
+  @override
+  String get saveDailyquestion => 'บันทึก';
+
+  @override
+  String get totalScore => 'คะแนน';
 }

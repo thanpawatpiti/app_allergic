@@ -386,10 +386,10 @@ class LanguageEn extends Languages {
   String get chooseLanguage => 'Language';
 
   @override
-  String get noseSickness => 'อาการทางจมูก ให้คะแนน 0-5 คะแนน';
+  String get noseSickness => 'Rate your nose allergy from 0-10';
 
   @override
-  String get eyeSickness => 'อาการทางตา ให้คะแนน 0-5 คะแนน';
+  String get eyeSickness => 'Rate your eyes allergy from 0-10';
 
   @override
   String get petDogs => 'Dog(s)';
@@ -423,4 +423,16 @@ class LanguageEn extends Languages {
 
   @override
   String get notifyDescription => 'Please answer the daily survey';
+
+  @override
+  String get headerSelectScreen => 'Select your survey type';
+
+  @override
+  String get btnSendDailyquestion => 'Send';
+
+  @override
+  String get saveDailyquestion => 'Save';
+
+  @override
+  String get totalScore => 'Your score : ';
 }

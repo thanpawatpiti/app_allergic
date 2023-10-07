@@ -7,6 +7,7 @@ import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:intl/intl.dart';
+import 'package:sizer/sizer.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
@@ -405,6 +406,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     Text(
                       Languages.of(context)!.acceptConditions,
                       style: TextStyle(
+                        fontSize: 8.sp,
                         color: acceptConditions ? Colors.green : Colors.red,
                       ),
                     ),
@@ -421,6 +423,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   Text(
                     Languages.of(context)!.privacyPolicy,
                     style: TextStyle(
+                      fontSize: 8.sp,
                       color: privacyPolicy ? Colors.green : Colors.red,
                     ),
                   ),

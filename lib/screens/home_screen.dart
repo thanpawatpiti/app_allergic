@@ -3,6 +3,7 @@ import 'package:allergic_app/prints/daily_questions_screen.dart';
 import 'package:allergic_app/prints/questions_screen.dart';
 import 'package:allergic_app/screens/daily_questions_screen.dart';
 import 'package:allergic_app/screens/questions_screen.dart';
+import 'package:allergic_app/screens/select_dailyquestion_screen.dart';
 import 'package:allergic_app/screens/selected_user.dart';
 import 'package:allergic_app/screens/setting_screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -10,6 +11,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:intl/intl.dart';
 import 'package:table_calendar/table_calendar.dart';
+import 'package:sizer/sizer.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -180,7 +182,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+          padding: EdgeInsets.symmetric(horizontal: 4.h, vertical: 4.w),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -195,20 +197,20 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: profileImage == '' || profileImage == 'null'
                           ? Image.asset(
                               'assets/images/user.png',
-                              width: 60,
-                              height: 60,
-                              fit: BoxFit.cover,
+                              width: 7.h,
+                              height: 10.w,
+                              fit: BoxFit.fill,
                             )
                           : Image.network(
                               profileImage,
-                              width: 60,
-                              height: 60,
+                              width: 7.h,
+                              height: 10.w,
                               fit: BoxFit.cover,
                             ),
                     ),
                     Container(
-                      width: 60,
-                      height: 60,
+                      width: 5.h,
+                      height: 5.w,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(30),
                           border: Border.all()),
@@ -234,8 +236,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   name,
-                  style: const TextStyle(
-                    fontSize: 30,
+                  style: TextStyle(
+                    fontSize: 15.sp,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -250,6 +252,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 lastDay: DateTime.now(),
                 calendarFormat: _calendarFormat,
                 daysOfWeekVisible: false,
+                headerStyle: HeaderStyle(
+                    titleTextStyle: TextStyle(fontSize: 8.sp),
+                    formatButtonTextStyle: TextStyle(fontSize:7.sp)),
                 calendarStyle: CalendarStyle(
                   weekendDecoration: BoxDecoration(
                     color: Colors.red[100],
@@ -496,7 +501,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             context,
                             MaterialPageRoute(
                                 builder: (context) =>
-                                    const DailyQuestionScreen()))
+                                    const SelectDailyQuestion()))
                         .then((value) => _getData());
                   } else {
                     Navigator.push(

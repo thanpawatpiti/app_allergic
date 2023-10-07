@@ -18,13 +18,13 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
     aOptions: AndroidOptions(encryptedSharedPreferences: true),
   );
 
-  int _dailyQuestion1 = 0;
-  int _dailyQuestion2 = 0;
-  int _dailyQuestion3 = 0;
-  int _dailyQuestion4 = 0;
-  int _dailyQuestion5 = 0;
-  int _dailyQuestion6 = 0;
-  int _dailyQuestion7 = 0;
+  double _dailyQuestion1 = 0;
+  double _dailyQuestion2 = 0;
+  double _dailyQuestion3 = 0;
+  double _dailyQuestion4 = 0;
+  double _dailyQuestion5 = 0;
+  double _dailyQuestion6 = 0;
+  double _dailyQuestion7 = 0;
 
   String? _username;
 
@@ -33,6 +33,8 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
     super.initState();
     _getUsername();
     _setData();
+    print(widget);
+    print(widget.survey);
   }
 
   @override
@@ -106,65 +108,56 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                 height: 20,
               ),
               Container(
+                width: double.infinity,
                 color: Colors.grey[200],
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                child: Row(
+                  
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 20),
-                      child: Text(
-                        Languages.of(context)!.dailyQuestion1,
-                        style: const TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 20),
+                          child: Text(
+                            Languages.of(context)!.dailyQuestion1,
+                            style: const TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 20),
-                      child: Text(
-                        Languages.of(context)!.dailyQuestion1_1,
-                        style: const TextStyle(
-                          fontSize: 16,
+                        Padding(
+                          padding: const EdgeInsets.only(left: 20),
+                          child: Text(
+                            Languages.of(context)!.dailyQuestion1_1,
+                            style: const TextStyle(
+                              fontSize: 16,
+                            ),
+                          ),
                         ),
-                      ),
-                    ),
-                    const SizedBox(
-                      height: 10,
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 20),
+                          child: Text(
+                            Languages.of(context)!.totalScore + "${_dailyQuestion1}",
+                            style: const TextStyle(
+                              fontSize: 16,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Icon(
-                            Icons.sentiment_very_satisfied,
-                            color: _dailyQuestion1 == 1 ? Colors.blue : Colors.green,
-                            size: _dailyQuestion1 == 1 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_satisfied,
-                            color: _dailyQuestion1 == 2 ? Colors.blue : Colors.green[300],
-                            size: _dailyQuestion1 == 2 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_neutral,
-                            color: _dailyQuestion1 == 3 ? Colors.blue : Colors.orange,
-                            size: _dailyQuestion1 == 3 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_dissatisfied,
-                            color: _dailyQuestion1 == 4 ? Colors.blue : Colors.red[200],
-                            size: _dailyQuestion1 == 4 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_very_dissatisfied,
-                            color: _dailyQuestion1 == 5 ? Colors.blue : Colors.red,
-                            size: _dailyQuestion1 == 5 ? 40 : 20,
-                          ),
-                        ],
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(
+                        Icons.sentiment_very_satisfied,
+                        color: Colors.green,
+                        size: 20,
                       ),
-                    ),
+                    )
                   ],
                 ),
               ),
@@ -172,6 +165,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                 height: 20,
               ),
               Container(
+                width: double.infinity,
                 color: Colors.grey[200],
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -198,39 +192,6 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                     const SizedBox(
                       height: 10,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Icon(
-                            Icons.sentiment_very_satisfied,
-                            color: _dailyQuestion2 == 1 ? Colors.blue : Colors.green,
-                            size: _dailyQuestion2 == 1 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_satisfied,
-                            color: _dailyQuestion2 == 2 ? Colors.blue : Colors.green[300],
-                            size: _dailyQuestion2 == 2 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_neutral,
-                            color: _dailyQuestion2 == 3 ? Colors.blue : Colors.orange,
-                            size: _dailyQuestion2 == 3 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_dissatisfied,
-                            color: _dailyQuestion2 == 4 ? Colors.blue : Colors.red[200],
-                            size: _dailyQuestion2 == 4 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_very_dissatisfied,
-                            color: _dailyQuestion2 == 5 ? Colors.blue : Colors.red,
-                            size: _dailyQuestion2 == 5 ? 40 : 20,
-                          ),
-                        ],
-                      ),
-                    ),
                   ],
                 ),
               ),
@@ -238,6 +199,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                 height: 20,
               ),
               Container(
+                width: double.infinity,
                 color: Colors.grey[200],
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -264,39 +226,6 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                     const SizedBox(
                       height: 10,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Icon(
-                            Icons.sentiment_very_satisfied,
-                            color: _dailyQuestion3 == 1 ? Colors.blue : Colors.green,
-                            size: _dailyQuestion3 == 1 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_satisfied,
-                            color: _dailyQuestion3 == 2 ? Colors.blue : Colors.green[300],
-                            size: _dailyQuestion3 == 2 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_neutral,
-                            color: _dailyQuestion3 == 3 ? Colors.blue : Colors.orange,
-                            size: _dailyQuestion3 == 3 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_dissatisfied,
-                            color: _dailyQuestion3 == 4 ? Colors.blue : Colors.red[200],
-                            size: _dailyQuestion3 == 4 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_very_dissatisfied,
-                            color: _dailyQuestion3 == 5 ? Colors.blue : Colors.red,
-                            size: _dailyQuestion3 == 5 ? 40 : 20,
-                          ),
-                        ],
-                      ),
-                    ),
                   ],
                 ),
               ),
@@ -304,6 +233,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                 height: 20,
               ),
               Container(
+                width: double.infinity,
                 color: Colors.grey[200],
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -330,39 +260,6 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                     const SizedBox(
                       height: 10,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Icon(
-                            Icons.sentiment_very_satisfied,
-                            color: _dailyQuestion4 == 1 ? Colors.blue : Colors.green,
-                            size: _dailyQuestion4 == 1 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_satisfied,
-                            color: _dailyQuestion4 == 2 ? Colors.blue : Colors.green[300],
-                            size: _dailyQuestion4 == 2 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_neutral,
-                            color: _dailyQuestion4 == 3 ? Colors.blue : Colors.orange,
-                            size: _dailyQuestion4 == 3 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_dissatisfied,
-                            color: _dailyQuestion4 == 4 ? Colors.blue : Colors.red[200],
-                            size: _dailyQuestion4 == 4 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_very_dissatisfied,
-                            color: _dailyQuestion4 == 5 ? Colors.blue : Colors.red,
-                            size: _dailyQuestion4 == 5 ? 40 : 20,
-                          ),
-                        ],
-                      ),
-                    ),
                   ],
                 ),
               ),
@@ -383,6 +280,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                 height: 20,
               ),
               Container(
+                width: double.infinity,
                 color: Colors.grey[200],
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -409,39 +307,6 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                     const SizedBox(
                       height: 10,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Icon(
-                            Icons.sentiment_very_satisfied,
-                            color: _dailyQuestion5 == 1 ? Colors.blue : Colors.green,
-                            size: _dailyQuestion5 == 1 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_satisfied,
-                            color: _dailyQuestion5 == 2 ? Colors.blue : Colors.green[300],
-                            size: _dailyQuestion5 == 2 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_neutral,
-                            color: _dailyQuestion5 == 3 ? Colors.blue : Colors.orange,
-                            size: _dailyQuestion5 == 3 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_dissatisfied,
-                            color: _dailyQuestion5 == 4 ? Colors.blue : Colors.red[200],
-                            size: _dailyQuestion5 == 4 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_very_dissatisfied,
-                            color: _dailyQuestion5 == 5 ? Colors.blue : Colors.red,
-                            size: _dailyQuestion5 == 5 ? 40 : 20,
-                          ),
-                        ],
-                      ),
-                    ),
                   ],
                 ),
               ),
@@ -449,6 +314,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                 height: 20,
               ),
               Container(
+                width: double.infinity,
                 color: Colors.grey[200],
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -475,39 +341,6 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                     const SizedBox(
                       height: 10,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Icon(
-                            Icons.sentiment_very_satisfied,
-                            color: _dailyQuestion6 == 1 ? Colors.blue : Colors.green,
-                            size: _dailyQuestion6 == 1 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_satisfied,
-                            color: _dailyQuestion6 == 2 ? Colors.blue : Colors.green[300],
-                            size: _dailyQuestion6 == 2 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_neutral,
-                            color: _dailyQuestion6 == 3 ? Colors.blue : Colors.orange,
-                            size: _dailyQuestion6 == 3 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_dissatisfied,
-                            color: _dailyQuestion6 == 4 ? Colors.blue : Colors.red[200],
-                            size: _dailyQuestion6 == 4 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_very_dissatisfied,
-                            color: _dailyQuestion6 == 5 ? Colors.blue : Colors.red,
-                            size: _dailyQuestion6 == 5 ? 40 : 20,
-                          ),
-                        ],
-                      ),
-                    ),
                   ],
                 ),
               ),
@@ -515,6 +348,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                 height: 20,
               ),
               Container(
+                width: double.infinity,
                 color: Colors.grey[200],
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -540,39 +374,6 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                     ),
                     const SizedBox(
                       height: 10,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Icon(
-                            Icons.sentiment_very_satisfied,
-                            color: _dailyQuestion7 == 1 ? Colors.blue : Colors.green,
-                            size: _dailyQuestion7 == 1 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_satisfied,
-                            color: _dailyQuestion7 == 2 ? Colors.blue : Colors.green[300],
-                            size: _dailyQuestion7 == 2 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_neutral,
-                            color: _dailyQuestion7 == 3 ? Colors.blue : Colors.orange,
-                            size: _dailyQuestion7 == 3 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_dissatisfied,
-                            color: _dailyQuestion7 == 4 ? Colors.blue : Colors.red[200],
-                            size: _dailyQuestion7 == 4 ? 40 : 20,
-                          ),
-                          Icon(
-                            Icons.sentiment_very_dissatisfied,
-                            color: _dailyQuestion7 == 5 ? Colors.blue : Colors.red,
-                            size: _dailyQuestion7 == 5 ? 40 : 20,
-                          ),
-                        ],
-                      ),
                     ),
                   ],
                 ),

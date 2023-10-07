@@ -440,7 +440,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         ),
                       ),
                     ),
-                    const Spacer(),
+                    SizedBox(
+                      width: 12.h,
+                    ),
                   ],
                 ),
                 const SizedBox(
@@ -525,7 +527,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                           fontSize: 10.sp,
                         ),
                       ),
-                      const Spacer(),
+                      SizedBox(
+                        width: 12.h,
+                      ),
                       Radio(
                         value: 'Female',
                         groupValue: _question2,
@@ -603,8 +607,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                               Text(
                                 Languages.of(context)!.answerNo,
-                                style: const TextStyle(
-                                  fontSize: 16,
+                                style: TextStyle(
+                                  fontSize: 10.sp,
                                 ),
                               ),
                             ],
@@ -1702,7 +1706,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                           fontSize: 10.sp,
                         ),
                       ),
-                      const Spacer(),
+                      SizedBox(
+                        width: 12.h,
+                      ),
                       Radio(
                         value: 'No',
                         groupValue: _question6,
@@ -1760,7 +1766,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                                 fontSize: 10.sp,
                               ),
                             ),
-                            const Spacer(),
+                            SizedBox(
+                              width: 12.h,
+                            ),
                             Radio(
                               value: 'No',
                               groupValue: _question6_1,
@@ -1814,7 +1822,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                           fontSize: 10.sp,
                         ),
                       ),
-                      const Spacer(),
+                      SizedBox(
+                        width: 12.h,
+                      ),
                       Radio(
                         value: 'No',
                         groupValue: _question7,
@@ -1864,7 +1874,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                                     fontSize: 10.sp,
                                   ),
                                 ),
-                                const Spacer(),
+                                SizedBox(
+                                  width: 12.h,
+                                ),
                                 SizedBox(
                                   width: 50,
                                   height: 50,
@@ -1884,7 +1896,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                                     fontSize: 10.sp,
                                   ),
                                 ),
-                                const Spacer(),
+                                SizedBox(
+                                  width: 12.h,
+                                ),
                                 SizedBox(
                                   width: 50,
                                   height: 50,
@@ -1904,7 +1918,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                                     fontSize: 10.sp,
                                   ),
                                 ),
-                                const Spacer(),
+                                SizedBox(
+                                  width: 12.h,
+                                ),
                                 SizedBox(
                                   width: 50,
                                   height: 50,
@@ -1989,7 +2005,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                                 fontSize: 10.sp,
                               ),
                             ),
-                            const Spacer(),
+                            SizedBox(
+                              width: 12.h,
+                            ),
                             Radio(
                               value: 'No',
                               groupValue: _question7_4,
@@ -2043,7 +2061,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                           fontSize: 10.sp,
                         ),
                       ),
-                      const Spacer(),
+                      SizedBox(
+                        width: 12.h,
+                      ),
                       Radio(
                         value: 'No',
                         groupValue: _question8,
@@ -2133,7 +2153,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                                 fontSize: 10.sp,
                               ),
                             ),
-                            const Spacer(),
+                            SizedBox(
+                              width: 12.h,
+                            ),
                             Radio(
                               value: 'No',
                               groupValue: _question8_2,
@@ -2219,7 +2241,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                           fontSize: 10.sp,
                         ),
                       ),
-                      const Spacer(),
+                      SizedBox(
+                        width: 12.h,
+                      ),
                       Radio(
                         value: 'No',
                         groupValue: _question9,
@@ -2304,7 +2328,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                           fontSize: 10.sp,
                         ),
                       ),
-                      const Spacer(),
+                      SizedBox(
+                        width: 12.h,
+                      ),
                       Radio(
                         value: 'No',
                         groupValue: _question10,
@@ -2389,7 +2415,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                           fontSize: 10.sp,
                         ),
                       ),
-                      const Spacer(),
+                      SizedBox(
+                        width: 12.h,
+                      ),
                       Radio(
                         value: 'No',
                         groupValue: _question11,
@@ -2447,7 +2475,9 @@ class _QuestionScreenState extends State<QuestionScreen> {
                                 fontSize: 10.sp,
                               ),
                             ),
-                            const Spacer(),
+                            SizedBox(
+                              width: 12.h,
+                            ),
                             Radio(
                               value: 'byBlood',
                               groupValue: _question11_2,

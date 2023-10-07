@@ -3,6 +3,7 @@ import 'package:allergic_app/localization/language/languages.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:intl/intl.dart';
 import 'package:sizer/sizer.dart';
@@ -19,19 +20,19 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
     aOptions: AndroidOptions(encryptedSharedPreferences: true),
   );
 
-  int _dailyQuestion1 = 0;
-  int _dailyQuestion2 = 0;
-  int _dailyQuestion3 = 0;
-  int _dailyQuestion4 = 0;
-  int _dailyQuestion5 = 0;
-  int _dailyQuestion6 = 0;
-  int _dailyQuestion7 = 0;
+  double _dailyQuestion1 = 0;
+  double _dailyQuestion2 = 0;
+  double _dailyQuestion3 = 0;
+  double _dailyQuestion4 = 0;
+  double _dailyQuestion5 = 0;
+  double _dailyQuestion6 = 0;
+  double _dailyQuestion7 = 0;
 
   String? _username;
 
   String name = '';
 
-  int _score = 0;
+  double _score = 0;
 
   @override
   void initState() {
@@ -169,71 +170,41 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       height: 10,
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion1 = 1;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_very_satisfied,
-                              color: _dailyQuestion1 == 1 ? Colors.blue : Colors.green,
-                              size: _dailyQuestion1 == 1 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion1 = 2;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_satisfied,
-                              color: _dailyQuestion1 == 2 ? Colors.blue : Colors.green[300],
-                              size: _dailyQuestion1 == 2 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion1 = 3;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_neutral,
-                              color: _dailyQuestion1 == 3 ? Colors.blue : Colors.orange,
-                              size: _dailyQuestion1 == 3 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion1 = 4;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_dissatisfied,
-                              color: _dailyQuestion1 == 4 ? Colors.blue : Colors.red[200],
-                              size: _dailyQuestion1 == 4 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion1 = 5;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_very_dissatisfied,
-                              color: _dailyQuestion1 == 5 ? Colors.blue : Colors.red,
-                              size: _dailyQuestion1 == 5 ? 40 : 20,
-                            ),
-                          ),
-                        ],
+                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                      child: FormBuilderSlider(
+                        name: 'slider',
+                        min: 0,
+                        max: 10,
+                        initialValue: _dailyQuestion1,
+                        divisions: 10,
+                        activeColor: Colors.redAccent,
+                        inactiveColor: Colors.pink[100],
+                        displayValues: DisplayValues.current,
+                        decoration: const InputDecoration(
+                          border: InputBorder.none,
+                          enabledBorder: InputBorder.none,
+                          focusedBorder: InputBorder.none,
+                          errorBorder: InputBorder.none,
+                          disabledBorder: InputBorder.none,
+                          contentPadding: EdgeInsets.only(
+                              left: 15, bottom: 11, top: 11, right: 15),
+                        ),
+                        onChanged: (value) {
+                          setState(() {
+                            _dailyQuestion1 = value!;
+                          });
+                        },
+                        onChangeStart: (value) {
+                          setState(() {
+                            _dailyQuestion1 = value!;
+                          });
+                        },
+                        onChangeEnd: (value) {
+                          setState(() {
+                            _dailyQuestion1 = value!;
+                          });
+                        },
+                        numberFormat: NumberFormat('#'),
                       ),
                     ),
                   ],
@@ -270,71 +241,41 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       height: 10,
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion2 = 1;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_very_satisfied,
-                              color: _dailyQuestion2 == 1 ? Colors.blue : Colors.green,
-                              size: _dailyQuestion2 == 1 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion2 = 2;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_satisfied,
-                              color: _dailyQuestion2 == 2 ? Colors.blue : Colors.green[300],
-                              size: _dailyQuestion2 == 2 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion2 = 3;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_neutral,
-                              color: _dailyQuestion2 == 3 ? Colors.blue : Colors.orange,
-                              size: _dailyQuestion2 == 3 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion2 = 4;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_dissatisfied,
-                              color: _dailyQuestion2 == 4 ? Colors.blue : Colors.red[200],
-                              size: _dailyQuestion2 == 4 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion2 = 5;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_very_dissatisfied,
-                              color: _dailyQuestion2 == 5 ? Colors.blue : Colors.red,
-                              size: _dailyQuestion2 == 5 ? 40 : 20,
-                            ),
-                          ),
-                        ],
+                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                      child: FormBuilderSlider(
+                        name: 'slider',
+                        min: 0,
+                        max: 10,
+                        initialValue: _dailyQuestion2,
+                        divisions: 10,
+                        activeColor: Colors.redAccent,
+                        inactiveColor: Colors.pink[100],
+                        displayValues: DisplayValues.current,
+                        decoration: const InputDecoration(
+                          border: InputBorder.none,
+                          enabledBorder: InputBorder.none,
+                          focusedBorder: InputBorder.none,
+                          errorBorder: InputBorder.none,
+                          disabledBorder: InputBorder.none,
+                          contentPadding: EdgeInsets.only(
+                              left: 15, bottom: 11, top: 11, right: 15),
+                        ),
+                        onChanged: (value) {
+                          setState(() {
+                            _dailyQuestion2 = value!;
+                          });
+                        },
+                        onChangeStart: (value) {
+                          setState(() {
+                            _dailyQuestion2 = value!;
+                          });
+                        },
+                        onChangeEnd: (value) {
+                          setState(() {
+                            _dailyQuestion2 = value!;
+                          });
+                        },
+                        numberFormat: NumberFormat('#'),
                       ),
                     ),
                   ],
@@ -371,71 +312,41 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       height: 10,
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion3 = 1;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_very_satisfied,
-                              color: _dailyQuestion3 == 1 ? Colors.blue : Colors.green,
-                              size: _dailyQuestion3 == 1 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion3 = 2;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_satisfied,
-                              color: _dailyQuestion3 == 2 ? Colors.blue : Colors.green[300],
-                              size: _dailyQuestion3 == 2 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion3 = 3;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_neutral,
-                              color: _dailyQuestion3 == 3 ? Colors.blue : Colors.orange,
-                              size: _dailyQuestion3 == 3 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion3 = 4;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_dissatisfied,
-                              color: _dailyQuestion3 == 4 ? Colors.blue : Colors.red[200],
-                              size: _dailyQuestion3 == 4 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion3 = 5;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_very_dissatisfied,
-                              color: _dailyQuestion3 == 5 ? Colors.blue : Colors.red,
-                              size: _dailyQuestion3 == 5 ? 40 : 20,
-                            ),
-                          ),
-                        ],
+                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                      child: FormBuilderSlider(
+                        name: 'slider',
+                        min: 0,
+                        max: 10,
+                        initialValue: _dailyQuestion3,
+                        divisions: 10,
+                        activeColor: Colors.redAccent,
+                        inactiveColor: Colors.pink[100],
+                        displayValues: DisplayValues.current,
+                        decoration: const InputDecoration(
+                          border: InputBorder.none,
+                          enabledBorder: InputBorder.none,
+                          focusedBorder: InputBorder.none,
+                          errorBorder: InputBorder.none,
+                          disabledBorder: InputBorder.none,
+                          contentPadding: EdgeInsets.only(
+                              left: 15, bottom: 11, top: 11, right: 15),
+                        ),
+                        onChanged: (value) {
+                          setState(() {
+                            _dailyQuestion3 = value!;
+                          });
+                        },
+                        onChangeStart: (value) {
+                          setState(() {
+                            _dailyQuestion3 = value!;
+                          });
+                        },
+                        onChangeEnd: (value) {
+                          setState(() {
+                            _dailyQuestion3 = value!;
+                          });
+                        },
+                        numberFormat: NumberFormat('#'),
                       ),
                     ),
                   ],
@@ -472,71 +383,41 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       height: 10,
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion4 = 1;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_very_satisfied,
-                              color: _dailyQuestion4 == 1 ? Colors.blue : Colors.green,
-                              size: _dailyQuestion4 == 1 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion4 = 2;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_satisfied,
-                              color: _dailyQuestion4 == 2 ? Colors.blue : Colors.green[300],
-                              size: _dailyQuestion4 == 2 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion4 = 3;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_neutral,
-                              color: _dailyQuestion4 == 3 ? Colors.blue : Colors.orange,
-                              size: _dailyQuestion4 == 3 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion4 = 4;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_dissatisfied,
-                              color: _dailyQuestion4 == 4 ? Colors.blue : Colors.red[200],
-                              size: _dailyQuestion4 == 4 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion4 = 5;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_very_dissatisfied,
-                              color: _dailyQuestion4 == 5 ? Colors.blue : Colors.red,
-                              size: _dailyQuestion4 == 5 ? 40 : 20,
-                            ),
-                          ),
-                        ],
+                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                      child: FormBuilderSlider(
+                        name: 'slider',
+                        min: 0,
+                        max: 10,
+                        initialValue: _dailyQuestion4,
+                        divisions: 10,
+                        activeColor: Colors.redAccent,
+                        inactiveColor: Colors.pink[100],
+                        displayValues: DisplayValues.current,
+                        decoration: const InputDecoration(
+                          border: InputBorder.none,
+                          enabledBorder: InputBorder.none,
+                          focusedBorder: InputBorder.none,
+                          errorBorder: InputBorder.none,
+                          disabledBorder: InputBorder.none,
+                          contentPadding: EdgeInsets.only(
+                              left: 15, bottom: 11, top: 11, right: 15),
+                        ),
+                        onChanged: (value) {
+                          setState(() {
+                            _dailyQuestion4 = value!;
+                          });
+                        },
+                        onChangeStart: (value) {
+                          setState(() {
+                            _dailyQuestion4 = value!;
+                          });
+                        },
+                        onChangeEnd: (value) {
+                          setState(() {
+                            _dailyQuestion4 = value!;
+                          });
+                        },
+                        numberFormat: NumberFormat('#'),
                       ),
                     ),
                   ],
@@ -586,71 +467,41 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       height: 10,
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion5 = 1;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_very_satisfied,
-                              color: _dailyQuestion5 == 1 ? Colors.blue : Colors.green,
-                              size: _dailyQuestion5 == 1 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion5 = 2;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_satisfied,
-                              color: _dailyQuestion5 == 2 ? Colors.blue : Colors.green[300],
-                              size: _dailyQuestion5 == 2 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion5 = 3;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_neutral,
-                              color: _dailyQuestion5 == 3 ? Colors.blue : Colors.orange,
-                              size: _dailyQuestion5 == 3 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion5 = 4;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_dissatisfied,
-                              color: _dailyQuestion5 == 4 ? Colors.blue : Colors.red[200],
-                              size: _dailyQuestion5 == 4 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion5 = 5;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_very_dissatisfied,
-                              color: _dailyQuestion5 == 5 ? Colors.blue : Colors.red,
-                              size: _dailyQuestion5 == 5 ? 40 : 20,
-                            ),
-                          ),
-                        ],
+                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                      child: FormBuilderSlider(
+                        name: 'slider',
+                        min: 0,
+                        max: 10,
+                        initialValue: _dailyQuestion5,
+                        divisions: 10,
+                        activeColor: Colors.redAccent,
+                        inactiveColor: Colors.pink[100],
+                        displayValues: DisplayValues.current,
+                        decoration: const InputDecoration(
+                          border: InputBorder.none,
+                          enabledBorder: InputBorder.none,
+                          focusedBorder: InputBorder.none,
+                          errorBorder: InputBorder.none,
+                          disabledBorder: InputBorder.none,
+                          contentPadding: EdgeInsets.only(
+                              left: 15, bottom: 11, top: 11, right: 15),
+                        ),
+                        onChanged: (value) {
+                          setState(() {
+                            _dailyQuestion5 = value!;
+                          });
+                        },
+                        onChangeStart: (value) {
+                          setState(() {
+                            _dailyQuestion5 = value!;
+                          });
+                        },
+                        onChangeEnd: (value) {
+                          setState(() {
+                            _dailyQuestion5 = value!;
+                          });
+                        },
+                        numberFormat: NumberFormat('#'),
                       ),
                     ),
                   ],
@@ -687,71 +538,41 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       height: 10,
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion6 = 1;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_very_satisfied,
-                              color: _dailyQuestion6 == 1 ? Colors.blue : Colors.green,
-                              size: _dailyQuestion6 == 1 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion6 = 2;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_satisfied,
-                              color: _dailyQuestion6 == 2 ? Colors.blue : Colors.green[300],
-                              size: _dailyQuestion6 == 2 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion6 = 3;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_neutral,
-                              color: _dailyQuestion6 == 3 ? Colors.blue : Colors.orange,
-                              size: _dailyQuestion6 == 3 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion6 = 4;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_dissatisfied,
-                              color: _dailyQuestion6 == 4 ? Colors.blue : Colors.red[200],
-                              size: _dailyQuestion6 == 4 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion6 = 5;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_very_dissatisfied,
-                              color: _dailyQuestion6 == 5 ? Colors.blue : Colors.red,
-                              size: _dailyQuestion6 == 5 ? 40 : 20,
-                            ),
-                          ),
-                        ],
+                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                      child: FormBuilderSlider(
+                        name: 'slider',
+                        min: 0,
+                        max: 10,
+                        initialValue: _dailyQuestion6,
+                        divisions: 10,
+                        activeColor: Colors.redAccent,
+                        inactiveColor: Colors.pink[100],
+                        displayValues: DisplayValues.current,
+                        decoration: const InputDecoration(
+                          border: InputBorder.none,
+                          enabledBorder: InputBorder.none,
+                          focusedBorder: InputBorder.none,
+                          errorBorder: InputBorder.none,
+                          disabledBorder: InputBorder.none,
+                          contentPadding: EdgeInsets.only(
+                              left: 15, bottom: 11, top: 11, right: 15),
+                        ),
+                        onChanged: (value) {
+                          setState(() {
+                            _dailyQuestion6 = value!;
+                          });
+                        },
+                        onChangeStart: (value) {
+                          setState(() {
+                            _dailyQuestion6 = value!;
+                          });
+                        },
+                        onChangeEnd: (value) {
+                          setState(() {
+                            _dailyQuestion6 = value!;
+                          });
+                        },
+                        numberFormat: NumberFormat('#'),
                       ),
                     ),
                   ],
@@ -788,71 +609,41 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                       height: 10,
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion7 = 1;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_very_satisfied,
-                              color: _dailyQuestion7 == 1 ? Colors.blue : Colors.green,
-                              size: _dailyQuestion7 == 1 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion7 = 2;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_satisfied,
-                              color: _dailyQuestion7 == 2 ? Colors.blue : Colors.green[300],
-                              size: _dailyQuestion7 == 2 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion7 = 3;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_neutral,
-                              color: _dailyQuestion7 == 3 ? Colors.blue : Colors.orange,
-                              size: _dailyQuestion7 == 3 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion7 = 4;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_dissatisfied,
-                              color: _dailyQuestion7 == 4 ? Colors.blue : Colors.red[200],
-                              size: _dailyQuestion7 == 4 ? 40 : 20,
-                            ),
-                          ),
-                          GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                _dailyQuestion7 = 5;
-                              });
-                            },
-                            child: Icon(
-                              Icons.sentiment_very_dissatisfied,
-                              color: _dailyQuestion7 == 5 ? Colors.blue : Colors.red,
-                              size: _dailyQuestion7 == 5 ? 40 : 20,
-                            ),
-                          ),
-                        ],
+                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                      child: FormBuilderSlider(
+                        name: 'slider',
+                        min: 0,
+                        max: 10,
+                        initialValue: _dailyQuestion7,
+                        divisions: 10,
+                        activeColor: Colors.redAccent,
+                        inactiveColor: Colors.pink[100],
+                        displayValues: DisplayValues.current,
+                        decoration: const InputDecoration(
+                          border: InputBorder.none,
+                          enabledBorder: InputBorder.none,
+                          focusedBorder: InputBorder.none,
+                          errorBorder: InputBorder.none,
+                          disabledBorder: InputBorder.none,
+                          contentPadding: EdgeInsets.only(
+                              left: 15, bottom: 11, top: 11, right: 15),
+                        ),
+                        onChanged: (value) {
+                          setState(() {
+                            _dailyQuestion7 = value!;
+                          });
+                        },
+                        onChangeStart: (value) {
+                          setState(() {
+                            _dailyQuestion7 = value!;
+                          });
+                        },
+                        onChangeEnd: (value) {
+                          setState(() {
+                            _dailyQuestion7 = value!;
+                          });
+                        },
+                        numberFormat: NumberFormat('#'),
                       ),
                     ),
                   ],
