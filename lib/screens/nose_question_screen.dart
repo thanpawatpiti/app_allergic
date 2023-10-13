@@ -33,7 +33,7 @@ class _NoseQuestionScreenState extends State<NoseQuestionScreen> {
                     child: Text(
                       Languages.of(context)!.questionDaily,
                       style: TextStyle(
-                        fontSize: 17.sp,
+                        fontSize: 18.sp,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -55,7 +55,7 @@ class _NoseQuestionScreenState extends State<NoseQuestionScreen> {
                 child: Text(
                   Languages.of(context)!.noseSickness,
                   style: TextStyle(
-                    fontSize: 10.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -73,7 +73,7 @@ class _NoseQuestionScreenState extends State<NoseQuestionScreen> {
                       child: Text(
                         Languages.of(context)!.dailyQuestion1,
                         style: TextStyle(
-                          fontSize: 13.sp,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -83,7 +83,7 @@ class _NoseQuestionScreenState extends State<NoseQuestionScreen> {
                       child: Text(
                         Languages.of(context)!.dailyQuestion1_1,
                         style: TextStyle(
-                          fontSize: 7.sp,
+                          fontSize: 12.sp,
                         ),
                       ),
                     ),
@@ -144,7 +144,7 @@ class _NoseQuestionScreenState extends State<NoseQuestionScreen> {
                       child: Text(
                         Languages.of(context)!.dailyQuestion2,
                         style: TextStyle(
-                          fontSize: 13.sp,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -154,7 +154,7 @@ class _NoseQuestionScreenState extends State<NoseQuestionScreen> {
                       child: Text(
                         Languages.of(context)!.dailyQuestion2_1,
                         style: TextStyle(
-                          fontSize: 7.sp,
+                          fontSize: 12.sp,
                         ),
                       ),
                     ),
@@ -215,7 +215,7 @@ class _NoseQuestionScreenState extends State<NoseQuestionScreen> {
                       child: Text(
                         Languages.of(context)!.dailyQuestion3,
                         style: TextStyle(
-                          fontSize: 13.sp,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -225,7 +225,7 @@ class _NoseQuestionScreenState extends State<NoseQuestionScreen> {
                       child: Text(
                         Languages.of(context)!.dailyQuestion3_1,
                         style: TextStyle(
-                          fontSize: 7.sp,
+                          fontSize: 12.sp,
                         ),
                       ),
                     ),
@@ -286,7 +286,7 @@ class _NoseQuestionScreenState extends State<NoseQuestionScreen> {
                       child: Text(
                         Languages.of(context)!.dailyQuestion4,
                         style: TextStyle(
-                          fontSize: 13.sp,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -296,7 +296,7 @@ class _NoseQuestionScreenState extends State<NoseQuestionScreen> {
                       child: Text(
                         Languages.of(context)!.dailyQuestion4_1,
                         style: TextStyle(
-                          fontSize: 7.sp,
+                          fontSize: 12.sp,
                         ),
                       ),
                     ),
@@ -349,19 +349,14 @@ class _NoseQuestionScreenState extends State<NoseQuestionScreen> {
               ),
               Center(
                 child: SizedBox(
-                  width: 15.w,
-                  height: 7.h,
+                  width: 20.w,
+                  height: 5.h,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       primary: Colors.blueAccent, // background
                       onPrimary: Colors.white, // foreground
                     ),
                     onPressed: () {
-                      print("question 1 score: ${_dailyQuestion1}");
-                      print("question 2 score: ${_dailyQuestion2}");
-                      print("question 3 score: ${_dailyQuestion3}");
-                      print("question 4 score: ${_dailyQuestion4}");
-
                       //List<double> eyeValue = [_dailyQuestion5, _dailyQuestion6, _dailyQuestion7];
                       Map<String, double> noseValue = {
                         "_dailyQuestion1": _dailyQuestion1,
@@ -374,11 +369,14 @@ class _NoseQuestionScreenState extends State<NoseQuestionScreen> {
                     child: Text(
                       Languages.of(context)!.saveDailyquestion,
                       style: TextStyle(
-                          fontSize: 10.sp
+                          fontSize: 12.sp
                       ),
                     ),
                   ),
                 ),
+              ),
+              const SizedBox(
+                height: 50,
               ),
             ],
           ),
