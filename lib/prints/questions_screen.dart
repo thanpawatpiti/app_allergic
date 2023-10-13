@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:intl/intl.dart';
+import 'package:sizer/sizer.dart';
 
 class QuestionDetailScreen extends StatefulWidget {
   const QuestionDetailScreen({Key? key, required this.survey}) : super(key: key);
@@ -135,6 +136,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(left: 20, top: 10),
@@ -263,6 +266,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                   padding:
                   const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Column(
                         children: [
@@ -288,8 +292,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                                   fontSize: 16,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 20,
+                              SizedBox(
+                                width: 14.h,
                               ),
                               Radio(
                                 value: 'No',

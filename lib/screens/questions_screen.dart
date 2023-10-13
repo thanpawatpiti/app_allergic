@@ -528,7 +528,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                         ),
                       ),
                       SizedBox(
-                        width: 12.h,
+                        width: 16.w,
                       ),
                       Radio(
                         value: 'Female',
@@ -2476,7 +2476,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                               ),
                             ),
                             SizedBox(
-                              width: 12.h,
+                              width: 4.h,
                             ),
                             Radio(
                               value: 'byBlood',

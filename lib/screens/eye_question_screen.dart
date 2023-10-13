@@ -32,7 +32,7 @@ class _EyeQuestionScreenState extends State<EyeQuestionScreen> {
                     child: Text(
                       Languages.of(context)!.questionDaily,
                       style: TextStyle(
-                        fontSize: 17.sp,
+                        fontSize: 18.sp,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -54,7 +54,7 @@ class _EyeQuestionScreenState extends State<EyeQuestionScreen> {
                 child: Text(
                   Languages.of(context)!.eyeSickness,
                   style: TextStyle(
-                    fontSize: 10.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -72,7 +72,7 @@ class _EyeQuestionScreenState extends State<EyeQuestionScreen> {
                       child: Text(
                         Languages.of(context)!.dailyQuestion5,
                         style: TextStyle(
-                          fontSize: 13.sp,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -82,7 +82,7 @@ class _EyeQuestionScreenState extends State<EyeQuestionScreen> {
                       child: Text(
                         Languages.of(context)!.dailyQuestion5_1,
                         style: TextStyle(
-                          fontSize: 7.sp,
+                          fontSize: 12.sp,
                         ),
                       ),
                     ),
@@ -144,7 +144,7 @@ class _EyeQuestionScreenState extends State<EyeQuestionScreen> {
                       child: Text(
                         Languages.of(context)!.dailyQuestion6,
                         style: TextStyle(
-                          fontSize: 13.sp,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -154,7 +154,7 @@ class _EyeQuestionScreenState extends State<EyeQuestionScreen> {
                       child: Text(
                         Languages.of(context)!.dailyQuestion6_1,
                         style: TextStyle(
-                          fontSize: 7.sp,
+                          fontSize: 12.sp,
                         ),
                       ),
                     ),
@@ -216,7 +216,7 @@ class _EyeQuestionScreenState extends State<EyeQuestionScreen> {
                       child: Text(
                         Languages.of(context)!.dailyQuestion7,
                         style: TextStyle(
-                          fontSize: 13.sp,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -226,7 +226,7 @@ class _EyeQuestionScreenState extends State<EyeQuestionScreen> {
                       child: Text(
                         Languages.of(context)!.dailyQuestion7_1,
                         style: TextStyle(
-                          fontSize: 7.sp,
+                          fontSize: 12.sp,
                         ),
                       ),
                     ),
@@ -280,18 +280,14 @@ class _EyeQuestionScreenState extends State<EyeQuestionScreen> {
               ),
               Center(
                 child: SizedBox(
-                  width: 15.w,
-                  height: 4.h,
+                  width: 20.w,
+                  height: 5.h,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       primary: Colors.blueAccent, // background
                       onPrimary: Colors.white, // foreground
                     ),
                     onPressed: () {
-                      print("question 5 score: ${_dailyQuestion5}");
-                      print("question 6 score: ${_dailyQuestion6}");
-                      print("question 7 score: ${_dailyQuestion7}");
-
                       //List<double> eyeValue = [_dailyQuestion5, _dailyQuestion6, _dailyQuestion7];
                       Map<String, double> eyeValue = {
                         "_dailyQuestion5": _dailyQuestion5,
@@ -303,7 +299,7 @@ class _EyeQuestionScreenState extends State<EyeQuestionScreen> {
                     child: Text(
                       Languages.of(context)!.saveDailyquestion,
                       style: TextStyle(
-                        fontSize: 10.sp
+                        fontSize: 12.sp
                       ),
                     ),
                   ),
