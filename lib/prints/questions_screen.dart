@@ -269,6 +269,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             Languages.of(context)!.question3_1,
@@ -316,6 +317,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                         height: 20,
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(Languages.of(context)!.question3_2,
                               style: const TextStyle(
@@ -337,8 +339,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                                   fontSize: 16,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 20,
+                              SizedBox(
+                                width: 14.h,
                               ),
                               Radio(
                                 value: 'No',
@@ -361,7 +363,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                         height: 20,
                       ),
                       Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(Languages.of(context)!.question3_3,
                               style: const TextStyle(
@@ -383,8 +385,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                                   fontSize: 16,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 20,
+                              SizedBox(
+                                width: 14.h,
                               ),
                               Radio(
                                 value: 'No',
@@ -407,6 +409,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                         height: 20,
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(Languages.of(context)!.question3_4,
                               style: const TextStyle(
@@ -428,8 +431,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                                   fontSize: 16,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 20,
+                              SizedBox(
+                                width: 14.h,
                               ),
                               Radio(
                                 value: 'No',
@@ -452,6 +455,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                         height: 20,
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(Languages.of(context)!.question3_5,
                               style: const TextStyle(
@@ -473,8 +477,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                                   fontSize: 16,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 20,
+                              SizedBox(
+                                width: 14.h,
                               ),
                               Radio(
                                 value: 'No',
@@ -497,6 +501,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                         height: 20,
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(Languages.of(context)!.question3_6,
                               style: const TextStyle(
@@ -518,8 +523,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                                   fontSize: 16,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 20,
+                              SizedBox(
+                                width: 14.h,
                               ),
                               Radio(
                                 value: 'No',
@@ -542,6 +547,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                         height: 20,
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(Languages.of(context)!.question3_7,
                               style: const TextStyle(
@@ -563,8 +569,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                                   fontSize: 16,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 20,
+                              SizedBox(
+                                width: 14.h,
                               ),
                               Radio(
                                 value: 'No',
@@ -587,6 +593,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                         height: 20,
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(Languages.of(context)!.question3_8,
                               style: const TextStyle(
@@ -608,8 +615,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                                   fontSize: 16,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 20,
+                              SizedBox(
+                                width: 14.h,
                               ),
                               Radio(
                                 value: 'No',
@@ -632,6 +639,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                         height: 20,
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(Languages.of(context)!.question3_9,
                               style: const TextStyle(
@@ -653,8 +661,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                                   fontSize: 16,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 20,
+                              SizedBox(
+                                width: 14.h,
                               ),
                               Radio(
                                 value: 'No',
@@ -677,6 +685,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                         height: 20,
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(Languages.of(context)!.question3_10,
                               style: const TextStyle(
@@ -698,8 +707,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                                   fontSize: 16,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 20,
+                              SizedBox(
+                                width: 14.h,
                               ),
                               Radio(
                                 value: 'No',
@@ -722,6 +731,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                         height: 20,
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(Languages.of(context)!.question3_11,
                               style: const TextStyle(
@@ -743,8 +753,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                                   fontSize: 16,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 20,
+                              SizedBox(
+                                width: 14.h,
                               ),
                               Radio(
                                 value: 'No',
@@ -767,6 +777,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                         height: 20,
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(Languages.of(context)!.question3_12,
                               style: const TextStyle(
@@ -788,8 +799,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                                   fontSize: 16,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 20,
+                              SizedBox(
+                                width: 14.h,
                               ),
                               Radio(
                                 value: 'No',
@@ -812,6 +823,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                         height: 20,
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(Languages.of(context)!.question3_13,
                               style: const TextStyle(
@@ -833,8 +845,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                                   fontSize: 16,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 20,
+                              SizedBox(
+                                width: 14.h,
                               ),
                               Radio(
                                 value: 'No',
@@ -857,6 +869,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                         height: 20,
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(Languages.of(context)!.question3_14,
                               style: const TextStyle(
@@ -878,8 +891,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                                   fontSize: 16,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 20,
+                              SizedBox(
+                                width: 14.h,
                               ),
                               Radio(
                                 value: 'No',
@@ -902,6 +915,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                         height: 20,
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(Languages.of(context)!.question3_15,
                               style: const TextStyle(
@@ -923,8 +937,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                                   fontSize: 16,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 20,
+                              SizedBox(
+                                width: 14.h,
                               ),
                               Radio(
                                 value: 'No',
@@ -947,6 +961,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                         height: 20,
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(Languages.of(context)!.question3_16,
                               style: const TextStyle(
@@ -968,8 +983,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                                   fontSize: 16,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 20,
+                              SizedBox(
+                                width: 14.h,
                               ),
                               Radio(
                                 value: 'No',
@@ -1082,6 +1097,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                   child: Column(
                     children: [
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             Languages.of(context)!.question5_1,
@@ -1105,8 +1121,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                                   fontSize: 16,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 20,
+                              SizedBox(
+                                width: 14.h,
                               ),
                               Radio(
                                 value: 'No',
@@ -1129,6 +1145,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                         height: 20,
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             Languages.of(context)!.question5_2,
@@ -1152,8 +1169,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                                   fontSize: 16,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 20,
+                              SizedBox(
+                                width: 14.h,
                               ),
                               Radio(
                                 value: 'No',
@@ -1176,6 +1193,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                         height: 20,
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             Languages.of(context)!.question5_3,
@@ -1199,8 +1217,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                                   fontSize: 16,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 20,
+                              SizedBox(
+                                width: 14.h,
                               ),
                               Radio(
                                 value: 'No',
@@ -1223,6 +1241,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                         height: 20,
                       ),
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             Languages.of(context)!.question5_4,
@@ -1246,8 +1265,8 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                                   fontSize: 16,
                                 ),
                               ),
-                              const SizedBox(
-                                width: 20,
+                              SizedBox(
+                                width: 14.h,
                               ),
                               Radio(
                                 value: 'No',
@@ -1431,6 +1450,7 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                   padding:
                   const EdgeInsets.symmetric(horizontal: 80, vertical: 10),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         children: [
