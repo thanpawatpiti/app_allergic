@@ -193,7 +193,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     ClipRRect(
-                      borderRadius: BorderRadius.circular(25),
+                      borderRadius: BorderRadius.circular(35),
                       child: profileImage == '' || profileImage == 'null'
                           ? Image.asset(
                               'assets/images/user.png',
@@ -203,14 +203,14 @@ class _HomeScreenState extends State<HomeScreen> {
                             )
                           : Image.network(
                               profileImage,
-                              width: 7.h,
-                              height: 10.w,
+                              width: 9.h,
+                              height: 18.w,
                               fit: BoxFit.cover,
                             ),
                     ),
                     Container(
                       width: 5.h,
-                      height: 5.w,
+                      height: 10.w,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(30),
                           border: Border.all()),
@@ -253,7 +253,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 calendarFormat: _calendarFormat,
                 daysOfWeekVisible: false,
                 headerStyle: HeaderStyle(
-                    titleTextStyle: TextStyle(fontSize: 8.sp),
+                    titleTextStyle: TextStyle(fontSize: 11.sp),
                     formatButtonTextStyle: TextStyle(fontSize:7.sp)),
                 calendarStyle: CalendarStyle(
                   weekendDecoration: BoxDecoration(

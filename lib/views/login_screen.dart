@@ -15,8 +15,11 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 import 'package:http/http.dart' as http;
+import 'package:intl/intl.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 import 'package:sizer/sizer.dart';
+
+import '../screens/questions_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -35,6 +38,11 @@ class _LoginScreenState extends State<LoginScreen> {
   );
 
   String tokenFCM = '';
+  String _userType = '';
+  bool _preTest = false;
+  double _age = 0;
+
+  get username => null;
 
   @override
   void initState() {
@@ -47,6 +55,43 @@ class _LoginScreenState extends State<LoginScreen> {
     _usernameController.dispose();
     _passwordController.dispose();
     super.dispose();
+  }
+
+  void preTest(username) async {
+    if (_userType == 'user') {
+      await FirebaseFirestore.instance
+          .collection('surveys')
+          .where('type', isEqualTo: 'pre')
+          .where('username', isEqualTo: username)
+          .get()
+          .then((value) {
+        if (value.docs.isNotEmpty) {
+          setState(() {
+            _preTest = true;
+          });
+          Navigator.pushAndRemoveUntil(
+              context,
+              MaterialPageRoute(builder: ((context) => const HomeScreen())),
+                  (route) => false);
+        } else {
+          setState(() {
+            _preTest = false;
+          });
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => QuestionScreen(
+                    age: _age,
+                  )));
+        }
+      });
+    }
+    else {
+      Navigator.pushAndRemoveUntil(
+           context,
+           MaterialPageRoute(builder: ((context) => const HomeScreen())),
+           (route) => false);
+    }
   }
 
   Future _getToken() async {
@@ -88,10 +133,23 @@ class _LoginScreenState extends State<LoginScreen> {
           storang.write(key: 'registerType', value: user['registerType']);
           storang.write(key: 'profile', value: user['profile']);
 
-          Navigator.pushAndRemoveUntil(
-              context,
-              MaterialPageRoute(builder: ((context) => const HomeScreen())),
-              (route) => false);
+          setState(() {
+            _userType = user['userType'];
+          });
+
+          storang.read(key: 'dateOfBirth').then((value) {
+            if (value != null) {
+              if (value != '') {
+                setState(() {
+                  _age = DateTime.now()
+                      .difference(DateFormat('dd/MM/yyyy').parse(value!))
+                      .inDays / 365;
+                });
+              }
+            }
+          });
+
+          preTest(user['username']);
         }
       } else {
         EasyLoading.dismiss();
@@ -140,10 +198,12 @@ class _LoginScreenState extends State<LoginScreen> {
             storang.write(key: 'registerType', value: user['registerType']);
             storang.write(key: 'profile', value: user['profile'] ?? '');
 
-            Navigator.pushAndRemoveUntil(
-                context,
-                MaterialPageRoute(builder: ((context) => const HomeScreen())),
-                (route) => false);
+            setState(() {
+              _userType = user['userType'];
+            });
+
+            preTest(user['username']);
+
           } else {
             EasyLoading.dismiss();
             List<String>? name = googleUser?.displayName?.split(' ');
@@ -181,11 +241,11 @@ class _LoginScreenState extends State<LoginScreen> {
                 storang.write(key: 'registerType', value: 'google');
                 storang.write(key: 'profile', value: googleUser?.photoUrl);
 
-                Navigator.pushAndRemoveUntil(
-                    context,
-                    MaterialPageRoute(
-                        builder: ((context) => const HomeScreen())),
-                    (route) => false);
+                setState(() {
+                  _userType = 'user';
+                });
+
+                preTest(googleUser?.email);
               });
             });
           }
@@ -235,10 +295,12 @@ class _LoginScreenState extends State<LoginScreen> {
           storang.write(key: 'registerType', value: user['registerType']);
           storang.write(key: 'profile', value: user['profile']);
 
-          Navigator.pushAndRemoveUntil(
-              context,
-              MaterialPageRoute(builder: ((context) => const HomeScreen())),
-              (route) => false);
+          setState(() {
+            _userType = user['userType'];
+          });
+
+          preTest(user['username']);
+
         } else {
           EasyLoading.dismiss();
           FirebaseFirestore.instance.collection('users').doc().set({
@@ -263,8 +325,7 @@ class _LoginScreenState extends State<LoginScreen> {
               final user = value.docs.first;
               EasyLoading.showSuccess(Languages.of(context)!.loginSuccess);
               storang.write(key: 'id', value: user.id);
-              storang.write(
-                  key: 'username', value: profile['email'] ?? profile['id']);
+              storang.write(key: 'username', value: profile['email'] ?? profile['id']);
               storang.write(key: 'name', value: profile['first_name']);
               storang.write(key: 'surname', value: profile['last_name']);
               storang.write(key: 'gender', value: '');
@@ -275,10 +336,12 @@ class _LoginScreenState extends State<LoginScreen> {
               storang.write(key: 'registerType', value: 'facebook');
               storang.write(key: 'profile', value: user['profile']);
 
-              Navigator.pushAndRemoveUntil(
-                  context,
-                  MaterialPageRoute(builder: ((context) => const HomeScreen())),
-                  (route) => false);
+              setState(() {
+                _userType = 'user';
+              });
+
+              preTest( profile['email'] ?? profile['id']);
+
             });
           });
         }
@@ -376,10 +439,12 @@ class _LoginScreenState extends State<LoginScreen> {
               storang.write(key: 'registerType', value: 'apple');
               storang.write(key: 'profile', value: user_['profile']);
 
-              Navigator.pushAndRemoveUntil(
-                  context,
-                  MaterialPageRoute(builder: ((context) => const HomeScreen())),
-                  (route) => false);
+              setState(() {
+                _userType = 'user';
+              });
+
+              preTest(user.email);
+
             });
           });
         }

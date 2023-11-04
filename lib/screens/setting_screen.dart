@@ -35,8 +35,7 @@ class _SettingScreenState extends State<SettingScreen> {
   String registerType = '';
   String _language = 'en';
 
-  final Uri _url = Uri.parse(
-      'https://www.freeprivacypolicy.com/live/327e3dc5-bbc2-4da2-a225-dda3dbf4c73b');
+Uri _url = Uri.parse("https://pdpa.pro/policies/view/th/zqs2VSemv9incYfAiVvszK4a");
 
   @override
   void initState() {
@@ -45,10 +44,12 @@ class _SettingScreenState extends State<SettingScreen> {
       if (value == 'th') {
         setState(() {
           _language = 'th';
+          _url = Uri.parse("https://pdpa.pro/policies/view/th/zqs2VSemv9incYfAiVvszK4a");
         });
       } else {
         setState(() {
           _language = 'en';
+          _url = Uri.parse("https://pdpa.pro/policies/view/en/zqs2VSemv9incYfAiVvszK4a");
         });
       }
     });
@@ -443,6 +444,10 @@ class _SettingScreenState extends State<SettingScreen> {
                                 builder: (context) => const LanguateScreen()))
                         .then((value) {
                           if (value != null) {
+                            setState(() {
+                              _language = value;
+                              _url = Uri.parse("https://pdpa.pro/policies/view/"+value+"/zqs2VSemv9incYfAiVvszK4a");
+                            });
                             changeLanguage(context, value);
                             storage.write(key: 'language', value: value);
                             Phoenix.rebirth(context);
