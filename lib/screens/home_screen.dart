@@ -1,7 +1,6 @@
 import 'package:allergic_app/localization/language/languages.dart';
 import 'package:allergic_app/prints/daily_questions_screen.dart';
 import 'package:allergic_app/prints/questions_screen.dart';
-import 'package:allergic_app/screens/daily_questions_screen.dart';
 import 'package:allergic_app/screens/questions_screen.dart';
 import 'package:allergic_app/screens/select_dailyquestion_screen.dart';
 import 'package:allergic_app/screens/selected_user.dart';
@@ -52,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
         if (value != '') {
           setState(() {
             _age = DateTime.now()
-                    .difference(DateFormat('dd/MM/yyyy').parse(value!))
+                    .difference(DateFormat('dd/MM/yyyy').parse(value))
                     .inDays /
                 365;
           });
@@ -512,7 +511,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 ))).then((value) {
                       // set 3 sec to call _getData() function
                       Future.delayed(const Duration(seconds: 3), () {
-                        print('call _getData()' + _getData().toString());
+                        print('call _getData()${_getData()}');
                         _getData();
                         preTest();
                       });

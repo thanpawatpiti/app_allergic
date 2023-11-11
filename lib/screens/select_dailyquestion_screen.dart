@@ -1,6 +1,5 @@
 import 'package:adaptive_dialog/adaptive_dialog.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
@@ -118,9 +117,9 @@ class _SelectDailyQuestionState extends State<SelectDailyQuestion> {
                 onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => EyeQuestionScreen()))
+                            builder: (context) => const EyeQuestionScreen()))
                     .then((value) {
-                  print("value ${value}");
+                  print("value $value");
                   print(value["_dailyQuestion5"]);
                   _dailyQuestion5 = value["_dailyQuestion5"];
                   _dailyQuestion6 = value["_dailyQuestion6"];
@@ -128,18 +127,18 @@ class _SelectDailyQuestionState extends State<SelectDailyQuestion> {
                   print(_dailyQuestion5);
                 }),
                 child: Container(
-                  padding: EdgeInsets.all(8.0),
-                  child: CircleAvatar(
-                    backgroundColor: Colors.white,
-                    radius: 48,
-                    backgroundImage: AssetImage("assets/images/1.png"),
-                  ),
+                  padding: const EdgeInsets.all(8.0),
                   height: MediaQuery.of(context).size.height * 0.18,
                   width: MediaQuery.of(context).size.width * 0.37,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     borderRadius: BorderRadius.all(
                       Radius.circular(10.0),
                     ),
+                  ),
+                  child: const CircleAvatar(
+                    backgroundColor: Colors.white,
+                    radius: 48,
+                    backgroundImage: AssetImage("assets/images/1.png"),
                   ),
                 ),
               ),
@@ -148,31 +147,31 @@ class _SelectDailyQuestionState extends State<SelectDailyQuestion> {
                 onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => NoseQuestionScreen()))
+                            builder: (context) => const NoseQuestionScreen()))
                     .then((value) {
-                  print("value ${value}");
+                  print("value $value");
                   _dailyQuestion1 = value["_dailyQuestion1"];
                   _dailyQuestion2 = value["_dailyQuestion2"];
                   _dailyQuestion3 = value["_dailyQuestion3"];
                   _dailyQuestion4 = value["_dailyQuestion4"];
                 }),
                 child: Container(
-                  padding: EdgeInsets.all(8.0),
-                  child: CircleAvatar(
-                    backgroundColor: Colors.white,
-                    radius: 48,
-                    backgroundImage: AssetImage("assets/images/2.png"),
-                  ),
+                  padding: const EdgeInsets.all(8.0),
                   height: MediaQuery.of(context).size.height * 0.18,
                   width: MediaQuery.of(context).size.width * 0.37,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     borderRadius: BorderRadius.all(
                       Radius.circular(10.0),
                     ),
                   ),
+                  child: const CircleAvatar(
+                    backgroundColor: Colors.white,
+                    radius: 48,
+                    backgroundImage: AssetImage("assets/images/2.png"),
+                  ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 80,
               ),
               SizedBox(
@@ -180,8 +179,7 @@ class _SelectDailyQuestionState extends State<SelectDailyQuestion> {
                 height: 9.w,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.blueAccent, // background
-                    onPrimary: Colors.white, // foreground
+                    foregroundColor: Colors.white, backgroundColor: Colors.blueAccent, // foreground
                   ),
                   onPressed: () async {
                     if (_dailyQuestion1 == 0 ||

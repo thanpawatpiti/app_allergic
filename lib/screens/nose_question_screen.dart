@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:intl/intl.dart';
@@ -29,7 +28,7 @@ class _NoseQuestionScreenState extends State<NoseQuestionScreen> {
               Row(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(left: 15, top: 15),
+                    padding: const EdgeInsets.only(left: 15, top: 15),
                     child: Text(
                       Languages.of(context)!.questionDaily,
                       style: TextStyle(
@@ -117,12 +116,12 @@ class _NoseQuestionScreenState extends State<NoseQuestionScreen> {
                         },
                         onChangeStart: (value) {
                           setState(() {
-                            _dailyQuestion1 = value!;
+                            _dailyQuestion1 = value;
                           });
                         },
                         onChangeEnd: (value) {
                           setState(() {
-                            _dailyQuestion1 = value!;
+                            _dailyQuestion1 = value;
                           });
                         },
                         numberFormat: NumberFormat('#'),
@@ -188,12 +187,12 @@ class _NoseQuestionScreenState extends State<NoseQuestionScreen> {
                         },
                         onChangeStart: (value) {
                           setState(() {
-                            _dailyQuestion2 = value!;
+                            _dailyQuestion2 = value;
                           });
                         },
                         onChangeEnd: (value) {
                           setState(() {
-                            _dailyQuestion2 = value!;
+                            _dailyQuestion2 = value;
                           });
                         },
                         numberFormat: NumberFormat('#'),
@@ -259,12 +258,12 @@ class _NoseQuestionScreenState extends State<NoseQuestionScreen> {
                         },
                         onChangeStart: (value) {
                           setState(() {
-                            _dailyQuestion3 = value!;
+                            _dailyQuestion3 = value;
                           });
                         },
                         onChangeEnd: (value) {
                           setState(() {
-                            _dailyQuestion3 = value!;
+                            _dailyQuestion3 = value;
                           });
                         },
                         numberFormat: NumberFormat('#'),
@@ -330,12 +329,12 @@ class _NoseQuestionScreenState extends State<NoseQuestionScreen> {
                         },
                         onChangeStart: (value) {
                           setState(() {
-                            _dailyQuestion4 = value!;
+                            _dailyQuestion4 = value;
                           });
                         },
                         onChangeEnd: (value) {
                           setState(() {
-                            _dailyQuestion4 = value!;
+                            _dailyQuestion4 = value;
                           });
                         },
                         numberFormat: NumberFormat('#'),
@@ -353,8 +352,7 @@ class _NoseQuestionScreenState extends State<NoseQuestionScreen> {
                   height: 5.h,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.blueAccent, // background
-                      onPrimary: Colors.white, // foreground
+                      foregroundColor: Colors.white, backgroundColor: Colors.blueAccent, // foreground
                     ),
                     onPressed: () {
                       //List<double> eyeValue = [_dailyQuestion5, _dailyQuestion6, _dailyQuestion7];

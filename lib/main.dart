@@ -170,7 +170,7 @@ void main(context) async {
 Future<void> _configureLocalTimeZone(context) async {
   tz.initializeTimeZones();
   final String timeZoneName = await FlutterTimezone.getLocalTimezone();
-  tz.setLocalLocation(tz.getLocation(timeZoneName!));
+  tz.setLocalLocation(tz.getLocation(timeZoneName));
   _scheduleDailyTenAMNotification(context);
 }
 
@@ -255,7 +255,7 @@ class _MyAppState extends State<MyApp> {
         if (value != '') {
           setState(() {
             _age = DateTime.now()
-                    .difference(DateFormat('dd/MM/yyyy').parse(value!))
+                    .difference(DateFormat('dd/MM/yyyy').parse(value))
                     .inDays /
                 365;
           });
@@ -318,7 +318,7 @@ class _MyAppState extends State<MyApp> {
           flutterLocalNotificationsPlugin.resolvePlatformSpecificImplementation<
               AndroidFlutterLocalNotificationsPlugin>();
 
-      await androidImplementation?.requestPermission();
+      await androidImplementation?.requestNotificationsPermission();
     }
   }
 
@@ -329,10 +329,10 @@ class _MyAppState extends State<MyApp> {
         context: context,
         builder: (BuildContext context) => CupertinoAlertDialog(
           title: receivedNotification.title != null
-              ? Text(receivedNotification.title!)
+              ? Text(receivedNotification.title)
               : null,
           content: receivedNotification.body != null
-              ? Text(receivedNotification.body!)
+              ? Text(receivedNotification.body)
               : null,
           actions: <Widget>[
             CupertinoDialogAction(

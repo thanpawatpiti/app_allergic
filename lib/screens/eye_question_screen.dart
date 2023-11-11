@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:intl/intl.dart';
@@ -28,7 +27,7 @@ class _EyeQuestionScreenState extends State<EyeQuestionScreen> {
               Row(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(left: 15, top: 15),
+                    padding: const EdgeInsets.only(left: 15, top: 15),
                     child: Text(
                       Languages.of(context)!.questionDaily,
                       style: TextStyle(
@@ -117,12 +116,12 @@ class _EyeQuestionScreenState extends State<EyeQuestionScreen> {
                         },
                         onChangeStart: (value) {
                           setState(() {
-                            _dailyQuestion5 = value!;
+                            _dailyQuestion5 = value;
                           });
                         },
                         onChangeEnd: (value) {
                           setState(() {
-                            _dailyQuestion5 = value!;
+                            _dailyQuestion5 = value;
                           });
                         },
                         numberFormat: NumberFormat('#'),
@@ -189,12 +188,12 @@ class _EyeQuestionScreenState extends State<EyeQuestionScreen> {
                         },
                         onChangeStart: (value) {
                           setState(() {
-                            _dailyQuestion6 = value!;
+                            _dailyQuestion6 = value;
                           });
                         },
                         onChangeEnd: (value) {
                           setState(() {
-                            _dailyQuestion6 = value!;
+                            _dailyQuestion6 = value;
                           });
                         },
                         numberFormat: NumberFormat('#'),
@@ -261,12 +260,12 @@ class _EyeQuestionScreenState extends State<EyeQuestionScreen> {
                         },
                         onChangeStart: (value) {
                           setState(() {
-                            _dailyQuestion7 = value!;
+                            _dailyQuestion7 = value;
                           });
                         },
                         onChangeEnd: (value) {
                           setState(() {
-                            _dailyQuestion7 = value!;
+                            _dailyQuestion7 = value;
                           });
                         },
                         numberFormat: NumberFormat('#'),
@@ -284,8 +283,7 @@ class _EyeQuestionScreenState extends State<EyeQuestionScreen> {
                   height: 5.h,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.blueAccent, // background
-                      onPrimary: Colors.white, // foreground
+                      foregroundColor: Colors.white, backgroundColor: Colors.blueAccent, // foreground
                     ),
                     onPressed: () {
                       //List<double> eyeValue = [_dailyQuestion5, _dailyQuestion6, _dailyQuestion7];

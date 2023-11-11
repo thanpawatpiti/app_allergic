@@ -191,12 +191,12 @@ class _QuestionScreenState extends State<QuestionDetailScreen> {
                   },
                   onChangeStart: (value) {
                     setState(() {
-                      _question1 = value!;
+                      _question1 = value;
                     });
                   },
                   onChangeEnd: (value) {
                     setState(() {
-                      _question1 = value!;
+                      _question1 = value;
                     });
                   },
                   numberFormat: NumberFormat('#'),

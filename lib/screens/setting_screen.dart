@@ -446,7 +446,7 @@ Uri _url = Uri.parse("https://pdpa.pro/policies/view/th/zqs2VSemv9incYfAiVvszK4a
                           if (value != null) {
                             setState(() {
                               _language = value;
-                              _url = Uri.parse("https://pdpa.pro/policies/view/"+value+"/zqs2VSemv9incYfAiVvszK4a");
+                              _url = Uri.parse("${"https://pdpa.pro/policies/view/"+value}/zqs2VSemv9incYfAiVvszK4a");
                             });
                             changeLanguage(context, value);
                             storage.write(key: 'language', value: value);

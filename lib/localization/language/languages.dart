@@ -1,4 +1,3 @@
-import 'package:allergic_app/views/choose_languate.dart';
 import 'package:flutter/material.dart';
 
 abstract class Languages {

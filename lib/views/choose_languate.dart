@@ -2,8 +2,6 @@ import 'package:adaptive_dialog/adaptive_dialog.dart';
 import 'package:allergic_app/localization/locale_constant.dart';
 import 'package:allergic_app/views/onboarding_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:sizer/sizer.dart';
 
@@ -62,7 +60,7 @@ class _ChooseLanguateState extends State<ChooseLanguate> {
                   backgroundColor: Colors.white,
                   radius: 10.h,
                   backgroundImage:
-                      AssetImage('assets/images/united-states.png'),
+                      const AssetImage('assets/images/united-states.png'),
                 ),
               ),
               Text('English', style: TextStyle(fontSize: 10.sp)),
@@ -87,7 +85,7 @@ class _ChooseLanguateState extends State<ChooseLanguate> {
                 child: CircleAvatar(
                   backgroundColor: Colors.white,
                   radius: 10.h,
-                  backgroundImage: AssetImage('assets/images/thailand.png'),
+                  backgroundImage: const AssetImage('assets/images/thailand.png'),
                 ),
               ),
               Text('ภาษาไทย', style: TextStyle(fontSize: 10.sp)),

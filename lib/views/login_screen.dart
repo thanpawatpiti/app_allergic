@@ -142,7 +142,7 @@ class _LoginScreenState extends State<LoginScreen> {
               if (value != '') {
                 setState(() {
                   _age = DateTime.now()
-                      .difference(DateFormat('dd/MM/yyyy').parse(value!))
+                      .difference(DateFormat('dd/MM/yyyy').parse(value))
                       .inDays / 365;
                 });
               }
@@ -160,21 +160,21 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Future _loginWithGoogle(BuildContext context) async {
     EasyLoading.show(status: Languages.of(context)!.loading);
-    GoogleSignIn _googleSignIn = GoogleSignIn(
+    GoogleSignIn googleSignIn = GoogleSignIn(
       scopes: [
         'email',
         'https://www.googleapis.com/auth/contacts.readonly',
       ],
     );
 
-    GoogleSignInAccount? googleUser = await _googleSignIn.signIn();
+    GoogleSignInAccount? googleUser = await googleSignIn.signIn();
     if (googleUser != null) {
-      GoogleSignInAuthentication googleAuth = await googleUser!.authentication;
+      GoogleSignInAuthentication googleAuth = await googleUser.authentication;
 
       if (googleAuth.accessToken != null && googleAuth.idToken != null) {
         FirebaseFirestore.instance
             .collection('users')
-            .where('username', isEqualTo: googleUser?.email)
+            .where('username', isEqualTo: googleUser.email)
             .where('registerType', isEqualTo: 'google')
             .get()
             .then((value) {
@@ -206,9 +206,9 @@ class _LoginScreenState extends State<LoginScreen> {
 
           } else {
             EasyLoading.dismiss();
-            List<String>? name = googleUser?.displayName?.split(' ');
+            List<String>? name = googleUser.displayName?.split(' ');
             FirebaseFirestore.instance.collection('users').doc().set({
-              'username': googleUser?.email,
+              'username': googleUser.email,
               'password': Random().nextInt(1000000).toString(),
               'name': name![0] != '' ? name[0] : '',
               'surname': name[1] != '' ? name[1] : '',
@@ -218,18 +218,18 @@ class _LoginScreenState extends State<LoginScreen> {
               'registerType': 'google',
               'registerDate': DateTime.now().toString(),
               'tokenFCM': tokenFCM,
-              'profile': googleUser?.photoUrl,
+              'profile': googleUser.photoUrl,
             }).then((value) {
               FirebaseFirestore.instance
                   .collection('users')
-                  .where('username', isEqualTo: googleUser?.email)
+                  .where('username', isEqualTo: googleUser.email)
                   .where('registerType', isEqualTo: 'google')
                   .get()
                   .then((value) {
                 final user = value.docs.first;
                 EasyLoading.showSuccess(Languages.of(context)!.loginSuccess);
                 storang.write(key: 'id', value: user.id);
-                storang.write(key: 'username', value: googleUser?.email);
+                storang.write(key: 'username', value: googleUser.email);
                 storang.write(key: 'name', value: name[0] != '' ? name[0] : '');
                 storang.write(
                     key: 'surname', value: name[1] != '' ? name[1] : '');
@@ -239,13 +239,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 storang.write(key: 'isLogin', value: 'true');
                 storang.write(key: 'userType', value: 'user');
                 storang.write(key: 'registerType', value: 'google');
-                storang.write(key: 'profile', value: googleUser?.photoUrl);
+                storang.write(key: 'profile', value: googleUser.photoUrl);
 
                 setState(() {
                   _userType = 'user';
                 });
 
-                preTest(googleUser?.email);
+                preTest(googleUser.email);
               });
             });
           }

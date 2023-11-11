@@ -196,12 +196,12 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                         },
                         onChangeStart: (value) {
                           setState(() {
-                            _dailyQuestion1 = value!;
+                            _dailyQuestion1 = value;
                           });
                         },
                         onChangeEnd: (value) {
                           setState(() {
-                            _dailyQuestion1 = value!;
+                            _dailyQuestion1 = value;
                           });
                         },
                         numberFormat: NumberFormat('#'),
@@ -267,12 +267,12 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                         },
                         onChangeStart: (value) {
                           setState(() {
-                            _dailyQuestion2 = value!;
+                            _dailyQuestion2 = value;
                           });
                         },
                         onChangeEnd: (value) {
                           setState(() {
-                            _dailyQuestion2 = value!;
+                            _dailyQuestion2 = value;
                           });
                         },
                         numberFormat: NumberFormat('#'),
@@ -338,12 +338,12 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                         },
                         onChangeStart: (value) {
                           setState(() {
-                            _dailyQuestion3 = value!;
+                            _dailyQuestion3 = value;
                           });
                         },
                         onChangeEnd: (value) {
                           setState(() {
-                            _dailyQuestion3 = value!;
+                            _dailyQuestion3 = value;
                           });
                         },
                         numberFormat: NumberFormat('#'),
@@ -409,12 +409,12 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                         },
                         onChangeStart: (value) {
                           setState(() {
-                            _dailyQuestion4 = value!;
+                            _dailyQuestion4 = value;
                           });
                         },
                         onChangeEnd: (value) {
                           setState(() {
-                            _dailyQuestion4 = value!;
+                            _dailyQuestion4 = value;
                           });
                         },
                         numberFormat: NumberFormat('#'),
@@ -493,12 +493,12 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                         },
                         onChangeStart: (value) {
                           setState(() {
-                            _dailyQuestion5 = value!;
+                            _dailyQuestion5 = value;
                           });
                         },
                         onChangeEnd: (value) {
                           setState(() {
-                            _dailyQuestion5 = value!;
+                            _dailyQuestion5 = value;
                           });
                         },
                         numberFormat: NumberFormat('#'),
@@ -564,12 +564,12 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                         },
                         onChangeStart: (value) {
                           setState(() {
-                            _dailyQuestion6 = value!;
+                            _dailyQuestion6 = value;
                           });
                         },
                         onChangeEnd: (value) {
                           setState(() {
-                            _dailyQuestion6 = value!;
+                            _dailyQuestion6 = value;
                           });
                         },
                         numberFormat: NumberFormat('#'),
@@ -635,12 +635,12 @@ class _DailyQuestionScreenState extends State<DailyQuestionScreen> {
                         },
                         onChangeStart: (value) {
                           setState(() {
-                            _dailyQuestion7 = value!;
+                            _dailyQuestion7 = value;
                           });
                         },
                         onChangeEnd: (value) {
                           setState(() {
-                            _dailyQuestion7 = value!;
+                            _dailyQuestion7 = value;
                           });
                         },
                         numberFormat: NumberFormat('#'),

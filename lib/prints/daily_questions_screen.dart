@@ -97,7 +97,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -160,7 +160,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 20),
-                            child: Container(
+                            child: SizedBox(
                               width: MediaQuery.of(context).size.width * 0.75,
                               child: Text(
                                 Languages.of(context)!.dailyQuestion1_1,
@@ -176,8 +176,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 20),
                             child: Text(
-                              Languages.of(context)!.totalScore +
-                                  "${_dailyQuestion1}",
+                              "${Languages.of(context)!.totalScore}$_dailyQuestion1",
                               style: const TextStyle(
                                 fontSize: 16,
                               ),
@@ -208,7 +207,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Container(
+                          SizedBox(
                             width: MediaQuery.of(context).size.width * 0.75,
                             child: Padding(
                               padding: const EdgeInsets.only(left: 20),
@@ -223,7 +222,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 20),
-                            child: Container(
+                            child: SizedBox(
                               width: MediaQuery.of(context).size.width * 0.75,
                               child: Text(
                                 Languages.of(context)!.dailyQuestion2_1,
@@ -239,7 +238,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 20),
                             child: Text(
-                              Languages.of(context)!.totalScore + "${_dailyQuestion2}",
+                              "${Languages.of(context)!.totalScore}$_dailyQuestion2",
                               style: const TextStyle(
                                 fontSize: 16,
                               ),
@@ -282,7 +281,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 20),
-                            child: Container(
+                            child: SizedBox(
                               width: MediaQuery.of(context).size.width*0.75,
                               child: Text(
                                 Languages.of(context)!.dailyQuestion3_1,
@@ -298,7 +297,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 20),
                             child: Text(
-                              Languages.of(context)!.totalScore + "${_dailyQuestion3}",
+                              "${Languages.of(context)!.totalScore}$_dailyQuestion3",
                               style: const TextStyle(
                                 fontSize: 16,
                               ),
@@ -341,7 +340,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 20),
-                            child: Container(
+                            child: SizedBox(
                               width: MediaQuery.of(context).size.width*0.75,
                               child: Text(
                                 Languages.of(context)!.dailyQuestion4_1,
@@ -357,7 +356,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 20),
                             child: Text(
-                              Languages.of(context)!.totalScore + "${_dailyQuestion4}",
+                              "${Languages.of(context)!.totalScore}$_dailyQuestion4",
                               style: const TextStyle(
                                 fontSize: 16,
                               ),
@@ -413,7 +412,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 20),
-                            child: Container(
+                            child: SizedBox(
                               width: MediaQuery.of(context).size.width*0.75,
                               child: Text(
                                 Languages.of(context)!.dailyQuestion5_1,
@@ -429,7 +428,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 20),
                             child: Text(
-                              Languages.of(context)!.totalScore + "${_dailyQuestion5}",
+                              "${Languages.of(context)!.totalScore}$_dailyQuestion5",
                               style: const TextStyle(
                                 fontSize: 16,
                               ),
@@ -472,7 +471,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 20),
-                            child: Container(
+                            child: SizedBox(
                               width: MediaQuery.of(context).size.width*0.75,
                               child: Text(
                                 Languages.of(context)!.dailyQuestion6_1,
@@ -488,7 +487,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 20),
                             child: Text(
-                              Languages.of(context)!.totalScore + "${_dailyQuestion6}",
+                              "${Languages.of(context)!.totalScore}$_dailyQuestion6",
                               style: const TextStyle(
                                 fontSize: 16,
                               ),
@@ -531,7 +530,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 20),
-                            child: Container(
+                            child: SizedBox(
                               width: MediaQuery.of(context).size.width*0.75,
                               child: Text(
                                 Languages.of(context)!.dailyQuestion7_1,
@@ -547,7 +546,7 @@ class _DailyQuestionScreenState extends State<DailyQuestionDetailScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 20),
                             child: Text(
-                              Languages.of(context)!.totalScore + "${_dailyQuestion7}",
+                              "${Languages.of(context)!.totalScore}$_dailyQuestion7",
                               style: const TextStyle(
                                 fontSize: 16,
                               ),
